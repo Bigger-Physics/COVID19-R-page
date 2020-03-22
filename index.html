@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>COVID-19 Time-Varying Reproduction Numbers on Global</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://cdn.bootcss.com/font-awesome/5.12.1/js/solid.min.js"></script>
+    <script defer src="https://cdn.bootcss.com/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!-- <a href="http://www.bigphysics.org" target = "_blank"><img src="/static/BigPhysics.png" alt="" style="height: 160px;"></a> -->
+                <h4>Table of Contents</h4>
+            </div>
+
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#Background_and_Motivation">Background and Motivation</a>
+                </li>
+                <li>
+                    <a href="#Methods">Methods</a>
+                </li>
+                <li>
+                    <a href="#Time-varying_reproduction_number_of_typical_regions">
+                        Time-varying reproduction number of typical regions</a>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#Typical_region_I:_China_except_Hubei">Typical region I: China except Hubei</a>
+                        </li>
+                        <li>
+                            <a href="#Typical_region_II:_Singapore">Typical region II: Singapore</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a
+                        href="#Time-varying_reproduction_number_and_some_simple_prediction_of_daily_cases_of_some_regions">
+                        Time-varying reproduction number and some simple prediction of daily cases of some regions</a>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#France">France</a>
+                        </li>
+                        <li>
+                            <a href="#Germany">Germany</a>
+                        </li>
+                        <li>
+                            <a href="#Iran">Iran</a>
+                        </li>
+                        <li>
+                            <a href="#Italy">Italy</a>
+                        </li>
+                        <li>
+                            <a href="#Japan">Japan</a>
+                        </li>
+                        <li>
+                            <a href="#Korea">Korea</a>
+                        </li>
+                        <li>
+                            <a href="#Spain">Spain</a>
+                        </li>
+                        <li>
+                            <a href="#UK">UK</a>
+                        </li>
+                        <li>
+                            <a href="#USA">USA</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/index_zh.html"">中文版</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h1>COVID-19 Time-Varying Reproduction Numbers on Global</h1>
+
+                <div class=" line">
+                    </div>
+
+                    <h2><span id="Background_and_Motivation">Background and Motivation</span></h2>
+                    <p>Currently, COVID-19 has become a global scale threat to our health. Meanwhile, the situation in
+                        some
+                        regions such as China and Singapore has more or less become stable. To help everyone to be more
+                        aware of the global situation, and even hopefully contribute our possibly 3 cents to the
+                        intervention of this epidemics, we here calculated the time-varying reproduction number from
+                        time
+                        series of case numbers in each region on which we can get data and share it on this website. We
+                        will
+                        update daily when possible.
+                    </p>
+                    <p>The basic reproduction number <img src="/static/eq_en/eq.latex">, which means roughly the number
+                        of new
+                        individuals will be infected on average by a single infector when there is no intervention at
+                        all,
+                        and the corresponding time-varying reproduction number <img src="/static/eq_en/eq(1).latex"> at
+                        time <img src="/static/eq_en/eq(2).latex"> with possibly some interventions, are two important
+                        indicators of
+                        how severe is the epidemics and how effective are the interventions.
+                    </p>
+                    <p>Here, we will provide first a time series of <img src="/static/eq_en/eq(1).latex"> for each
+                        region on
+                        which we get data, and we will also show some predictive results based on very simple and rough
+                        extensions, which will be explained in the following.
+                    </p>
+
+                    <div class="line"></div>
+
+                    <h2><span id="Methods">Methods</span></h2>
+                    <p>While working on analysis of COVID-19 data, we note that the effective time-varing reproduction
+                        number of imported cases (<img src="/static/eq_en/eq(3).latex">) can be very different from the
+                        one of
+                        local cases (<img src="/static/eq_en/eq(4).latex">) due to the different intervention policy for
+                        imported
+                        cases and local cases. Thus, we
+                    </p>
+                    <ol>
+                        <li> classfifed all cases into the imported cases (the zeroth generation)<img
+                                src="/static/eq_en/eq(5).latex">, locals infected by the imported cases (first
+                            generation) <img src="/static/eq_en/eq(6).latex"> and locals infected by locals (second
+                            generation and beyond)
+                            <img src="/static/eq_en/eq(7).latex">,</li>
+                        <li> derived formula calculating <img src="/static/eq_en/eq(8).latex"> from time series of <img
+                                src="/static/eq_en/eq(9).latex">,</li>
+                        <li> Modified the R software EpiEstim according to the newly derived formula.</li>
+                    </ol>
+                    <p>Also, the test version of the modified EpiEstim has been provided at Github, and the manuscript
+                        on
+                        this new calculation will soon be posted on an arXiv website.
+                    </p>
+                    <p>With the calculated <img src="/static/eq_en/eq(1).latex">, we constructed two simple and rough
+                        scenarios
+                        to make some prediction,
+                    </p>
+                    <ol>
+                        <li> Null Scenario: extend the <img src="/static/eq_en/eq(1).latex"> of a region of interest by
+                            taking
+                            <img src="/static/eq_en/eq(10).latex">, where <img src="/static/eq_en/eq(11).latex"> is the
+                            latest time of
+                            the known <img src="/static/eq_en/eq(1).latex">, that is to say just take the latest value
+                            to be the
+                            future value of the time-varying reproduction number of a region of interest,</li>
+                        <li> Typical-Region Scenario: Extend the <img src="/static/eq_en/eq(1).latex"> of a region of
+                            interest by
+                            connecting to it the <img src="/static/eq_en/eq(12).latex"> of a chosen typical region,
+                            which we use
+                            China (cn) and Singapore (sg).</li>
+                    </ol>
+                    <p><img src="/static/eq_en/eq(1).latex"> of the two typical regions are decreasing functions since
+                        there is
+                        no data at the very beginning, and when there are data, usually there are interventions already.
+                    </p>
+                    <p>When we connect for example <img src="/static/eq_en/eq(13).latex"> to <img
+                            src="/static/eq_en/eq(1).latex"> of
+                        a region of interest, we might encouter three cases. Firstly, if the latest value <img
+                            src="/static/eq_en/eq(14).latex"> is smaller than some values but at all values of <img
+                            src="/static/eq_en/eq(13).latex">, we find the place <img src="/static/eq_en/eq(15).latex">
+                        such that <img src="/static/eq_en/eq(16).latex"> and then let <img
+                            src="/static/eq_en/eq(17).latex">. Secondly, if the
+                        latest value <img src="/static/eq_en/eq(14).latex"> is larger than all values of <img
+                            src="/static/eq_en/eq(13).latex">, we left extrapolate <img
+                            src="/static/eq_en/eq(13).latex"> (for example
+                        using the splinefun R function) so that we will find a large enough value such that <img
+                            src="/static/eq_en/eq(16).latex"> (here <img src="/static/eq_en/eq(15).latex">) and then
+                        again we let <img src="/static/eq_en/eq(17).latex">. Lastly, in principle, there is a case where
+                        <img src="/static/eq_en/eq(14).latex"> is smaller than all <img
+                            src="/static/eq_en/eq(13).latex">, but we have
+                        not see such a cases in real data.
+                    </p>
+                    <p>The Null Scenario is like to ask that if nothing changes what will happen, while the
+                        Typical-Region
+                        Scenario is to ask when will happen if the region of interest learn from the typical regions and
+                        those learned interventions are exactly as effective as they were in the original region.
+                    </p>
+                    <p>There are some limitations of the method. First, the scenarios are too simple to be realistic.
+                        Second, in many other regions, due to data limitations, we have not distinguished the zeroth,
+                        first,
+                        second and beyond generations of cases. The method is currently applied to a single-region
+                        model,
+                        where all the other regions are treated as exogenous variables. In principle, the method is
+                        readily
+                        applicable to a multi-region situation, where flows among the regions can be estimated via
+                        traffic
+                        data.
+                    </p>
+
+                    <h3><span id="Appendex_to_the_methods_section">Appendex to the
+                            methods section: some core formula</span></h3>
+                    <p>If you are interested in knowing more about our analysis before we publish the paper, here are
+                        some
+                        core formula:
+                    </p>
+                    <ol>
+                        <li> Locals infected by imported cases from some specific regions <img
+                                src="/static/eq_en/eq(18).latex">,
+                            where the zeroth generation refers to the imported cases and locals infected by them are
+                            called
+                            the first generation</li>
+                        <li> Locals infected by local infectors, which themselves can be from the first generation or
+                            beyond
+                            <img src="/static/eq_en/eq(19).latex">, which we call the second generation and beyond</li>
+                    </ol>
+                    <p>Correspondingly the time-varying reproducton numbers are respectively,
+                    </p>
+                    <ol>
+                        <li> <img src="/static/eq_en/eq(20).latex"></li>
+                        <li> <img src="/static/eq_en/eq(21).latex"></li>
+                    </ol>
+
+                    <div class="line"></div>
+
+                    <h2><span id="Time-varying_reproduction_number_of_typical_regions">Time-varying
+                            reproduction number of typical regions</span></h2>
+                    <p>Here we choose China except Hubei, which is simply due to the lack of data at the beginning of
+                        COVID-19 in Hubei, and Singapore as the typical regions as things are more or less under control
+                        now
+                        in those regions, and also we have a relatively long time series for those regions. Since they
+                        will
+                        be used as the basis of prediction scenario, here we first show their time-varying reproduction
+                        numbers.
+                    </p>
+                    <h3><span id="Typical_region_I:_China_except_Hubei">Typical region I: China except
+                            Hubei</span></h3>
+                    <p>As we mentioned earlier, we classified cases into the imported cases, the locals infected by the
+                        imported cases, and the locals infected by the locals, and we estimate the <img
+                            src="/static/eq_en/eq(3).latex"> and <img src="/static/eq_en/eq(4).latex">.
+                    </p>
+                    <p>
+                        <img alt="The time-varying reproduction number of China except Hubei,  and  are calculated saperately."
+                            src="/static/COVIDR.png" width="500" height="500">
+                    </p>
+                    <p>The time-varying reproduction number of China except Hubei, <img src="/static/eq_en/eq(3).latex">
+                        and <img src="/static/eq_en/eq(4).latex"> are calculated saperately. Later, we will only make
+                        use of <img src="/static/eq_en/eq(4).latex">, the blue line. We can see that it starts from
+                        large than 2.5 and it
+                        reaches less than 0.5 very quickly.
+                    </p>
+                    <p>
+                        <img alt="The time-varying reproduction number of China except Hubei, combined ." src="/static/COVIDR2.png"
+                            width="500" height="500">
+                    </p>
+                    <p>The time-varying reproduction number of China except Hubei, combined <img
+                            src="/static/eq_en/eq(1).latex">.
+                    </p>
+                    <p>We should note that the combined <img src="/static/eq_en/eq(1).latex"> is very different from the
+                        saperated <img src="/static/eq_en/eq(3).latex"> and <img src="/static/eq_en/eq(4).latex">.
+                    </p>
+                    <p>Please contact us "the Safety Science and Complex System Team" if you want to make use of the
+                        data
+                        behind this analysis.
+                    </p>
+
+                    <p><br></p>
+
+                    <h3><span id="Typical_region_II:_Singapore">Typical region II: Singapore</span></h3>
+                    <p>
+                        <img alt="The time-varying reproduction number of Singapore" src="/static/Singapore_R.png" width="500" height="500">
+                    </p>
+                    <p>
+                        The time-varying reproduction number of Singapore. Due to the lack of better data, we only
+                        calculated
+                        the combined <img src="/static/eq_en/eq(1).latex">. We can see it stars from a little over 2 and
+                        it
+                        reaches gradually to close to 0.5.
+                    </p>
+
+                    <div class="line"></div>
+
+                    <h2><span
+                            id="Time-varying_reproduction_number_and_some_simple_prediction_of_daily_cases_of_some_regions">Time-varying
+                            reproduction number and some simple prediction of daily cases of some regions</span></h2>
+                    <p>In this section, we will show the calculated time-varying reproduction number <img
+                            src="/static/eq_en/eq(1).latex"> of some regions. Again due to the lack of better data, we
+                        only
+                        calculated the combined <img src="/static/eq_en/eq(1).latex"> of both imported and local
+                        infectors. Based
+                        on the calculated <img src="/static/eq_en/eq(1).latex"> and the above known <img
+                            src="/static/eq_en/eq(12).latex"> of the typical regions, we also made some simple
+                        prediction of
+                        daily cases of those regions.
+                    </p>
+                    <p><br></p>
+                    <h3><span id="France">France</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_France">Time-varying reproduction number of France</span></h4>
+                    <p><img alt="Time-varying reproduction number of France, the combined  " src="/static/France_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of France, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_France:_Null_Scenario">Predictions of France: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of France" src="/static/France_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of France. If the time-varying reproduction number of France stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_France:_Typical-region_Scenario">Predictions of
+                            France:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of France, based on China except Hubei"
+                            src="/static/France_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of France, based on China except Hubei. If the time-varying
+                        reproduction number of France take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of France, based on Singapore." src="/static/France_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of France, based on Singapore. If the time-varying
+                        reproduction
+                        number of France take the track of the one of Singapore, this is what will happen.
+                    </p>
+                    <p><br></p>
+                    <h3><span id="Germany">Germany</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_Germany">Time-varying reproduction number of Germany</span></h4>
+                    <p><img alt="Time-varying reproduction number of Germany, the combined  " src="/static/Germany_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of Germany, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_Germany:_Null_Scenario">Predictions of Germany: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of Germany" src="/static/Germany_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of Germany. If the time-varying reproduction number of Germany stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_Germany:_Typical-region_Scenario">Predictions of
+                            Germany:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of Germany, based on China except Hubei"
+                            src="/static/Germany_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Germany, based on China except Hubei. If the time-varying
+                        reproduction number of Germany take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of Germany, based on Singapore." src="/static/Germany_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Germany, based on Singapore. If the time-varying
+                        reproduction
+                        number of Germany take the track of the one of Singapore, this is what will happen.
+                    </p>
+
+                    <p><br></p>
+                    <h3><span id="Iran">Iran</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_Iran">Time-varying reproduction number of Iran</span></h4>
+                    <p><img alt="Time-varying reproduction number of Iran, the combined  " src="/static/Iran_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of Iran, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_Iran:_Null_Scenario">Predictions of Iran: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of Iran" src="/static/Iran_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of Iran. If the time-varying reproduction number of Iran stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_Iran:_Typical-region_Scenario">Predictions of
+                            Iran:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of Iran, based on China except Hubei"
+                            src="/static/Iran_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Iran, based on China except Hubei. If the time-varying
+                        reproduction number of Iran take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of Iran, based on Singapore." src="/static/Iran_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Iran, based on Singapore. If the time-varying
+                        reproduction
+                        number of Iran take the track of the one of Singapore, this is what will happen.
+                    </p>
+
+                    <p><br></p>
+                    <h3><span id="Italy">Italy</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_Italy">Time-varying reproduction number of Italy</span></h4>
+                    <p><img alt="Time-varying reproduction number of Italy, the combined  " src="/static/Italy_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of Italy, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_Italy:_Null_Scenario">Predictions of Italy: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of Italy" src="/static/Italy_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of Italy. If the time-varying reproduction number of Italy stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_Italy:_Typical-region_Scenario">Predictions of
+                            Italy:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of Italy, based on China except Hubei"
+                            src="/static/Italy_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Italy, based on China except Hubei. If the time-varying
+                        reproduction number of Italy take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of Italy, based on Singapore." src="/static/Italy_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Italy, based on Singapore. If the time-varying
+                        reproduction
+                        number of Italy take the track of the one of Singapore, this is what will happen.
+                    </p>
+                    
+                    <p><br></p>
+                    <h3><span  id="Japan">Japan</span></h3>
+                    <h4><span  id="Time-varying_reproduction_number_of_Japan">Time-varying reproduction number of Japan</span></h4>
+                    <p><img alt="Time-varying reproduction number of Japan, the combined  " src="/static/Japan_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of Japan, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span  id="Predictions_of_Japan:_Null_Scenario">Predictions of Japan: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of Japan" src="/static/Japan_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of Japan. If the time-varying reproduction number of Japan stays the same, this is what will happen.
+                    </p>
+                    <h4><span  id="Predictions_of_Japan:_Typical-region_Scenario">Predictions of
+                            Japan:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of Japan, based on China except Hubei"
+                            src="/static/Japan_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Japan, based on China except Hubei. If the time-varying
+                        reproduction number of Japan take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of Japan, based on Singapore."
+                            src="/static/Japan_rsg_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Japan, based on Singapore. If the time-varying
+                        reproduction
+                        number of Japan take the track of the one of Singapore, this is what will happen.
+                    </p>
+                    
+                    <p><br></p>
+                    <h3><span id="Korea">Korea</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_Korea">Time-varying reproduction number of Korea</span></h4>
+                    <p><img alt="Time-varying reproduction number of Korea, the combined  " src="/static/Korea_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of Korea, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_Korea:_Null_Scenario">Predictions of Korea: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of Korea" src="/static/Korea_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of Korea. If the time-varying reproduction number of Korea stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_Korea:_Typical-region_Scenario">Predictions of
+                            Korea:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of Korea, based on China except Hubei"
+                            src="/static/Korea_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Korea, based on China except Hubei. If the time-varying
+                        reproduction number of Korea take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of Korea, based on Singapore." src="/static/Korea_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Korea, based on Singapore. If the time-varying
+                        reproduction
+                        number of Korea take the track of the one of Singapore, this is what will happen.
+                    </p>
+
+                    <p><br></p>
+                    <h3><span id="Spain">Spain</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_Spain">Time-varying reproduction number of Spain</span></h4>
+                    <p><img alt="Time-varying reproduction number of Spain, the combined  " src="/static/Spain_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of Spain, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_Spain:_Null_Scenario">Predictions of Spain: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of Spain" src="/static/Spain_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of Spain. If the time-varying reproduction number of Spain stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_Spain:_Typical-region_Scenario">Predictions of
+                            Spain:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of Spain, based on China except Hubei"
+                            src="/static/Spain_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Spain, based on China except Hubei. If the time-varying
+                        reproduction number of Spain take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of Spain, based on Singapore." src="/static/Spain_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of Spain, based on Singapore. If the time-varying
+                        reproduction
+                        number of Spain take the track of the one of Singapore, this is what will happen.
+                    </p>
+                    
+                    <p><br></p>
+                    <h3><span id="UK">UK</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_UK">Time-varying reproduction number of UK</span></h4>
+                    <p><img alt="Time-varying reproduction number of UK, the combined  " src="/static/UK_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of UK, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_UK:_Null_Scenario">Predictions of UK: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of UK" src="/static/UK_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of UK. If the time-varying reproduction number of UK stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_UK:_Typical-region_Scenario">Predictions of
+                            UK:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of UK, based on China except Hubei"
+                            src="/static/UK_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of UK, based on China except Hubei. If the time-varying
+                        reproduction number of UK take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of UK, based on Singapore." src="/static/UK_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of UK, based on Singapore. If the time-varying
+                        reproduction
+                        number of UK take the track of the one of Singapore, this is what will happen.
+                    </p>
+
+                    <p><br></p>
+                    <h3><span id="USA">USA</span></h3>
+                    <h4><span id="Time-varying_reproduction_number_of_USA">Time-varying reproduction number of USA</span></h4>
+                    <p><img alt="Time-varying reproduction number of USA, the combined  " src="/static/USA_R.png" width="500"
+                            height="500">
+                    </p>
+                    <p>Time-varying reproduction number of USA, the combined <img src="/static/eq_en/eq(1).latex">
+                    </p>
+                    <h4><span id="Predictions_of_USA:_Null_Scenario">Predictions of USA: Null Scenario</span></h4>
+                    <p><img alt="Null Scenario predictions of USA" src="/static/USA_null_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Null Scenario predictions of USA. If the time-varying reproduction number of USA stays the same, this is what
+                        will happen.
+                    </p>
+                    <h4><span id="Predictions_of_USA:_Typical-region_Scenario">Predictions of
+                            USA:
+                            Typical-region Scenario</span></h4>
+                    <p><img alt="Typical-Region scenario predictions of USA, based on China except Hubei"
+                            src="/static/USA_rcn_incidence.png" width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of USA, based on China except Hubei. If the time-varying
+                        reproduction number of USA take the track of the one of China except Hubei, this is what will
+                        happen.
+                    </p>
+                    <p><img alt="Typical-Region scenario predictions of USA, based on Singapore." src="/static/USA_rsg_incidence.png"
+                            width="500" height="500">
+                    </p>
+                    <p>Typical-Region scenario predictions of USA, based on Singapore. If the time-varying
+                        reproduction
+                        number of USA take the track of the one of Singapore, this is what will happen.
+                    </p>
+                </div>
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+</body>
+
+</html>
