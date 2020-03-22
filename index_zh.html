@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://cdn.bootcss.com/font-awesome/5.12.1/js/solid.min.js"></script>
@@ -25,7 +25,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <!-- <a href="http://www.bigphysics.org" target = "_blank"><img src="/static/BigPhysics.png" alt="" style="height: 160px;"></a> -->
+                <!-- <a href="http://www.bigphysics.org" target = "_blank"><img src="./static/BigPhysics.png" alt="" style="height: 160px;"></a> -->
                 <h4>目录</h4>
             </div>
 
@@ -120,17 +120,17 @@
                     <h2><span id="Background_and_Motivation">背景和动机</span></h2>
                     <p>当前，COVID-19已经对全地球人的健康形成了威胁。同时，在中国和新加坡等地区的传播已经基本得到控制。为了帮助大家更清楚地看到每个国家的疫情发展情况，甚至给疫情防控作参考，我们从各个国家的病人数量时间序列计算了有效再生数时间序列。
                     </p>
-                    <p>一个传染病的基本再生数<img src="/static/eq_zh/eq.latex">（不采取干预措施的条件下，平均一个人传染多少个人）和时间变化的有效再生数<img src="/static/eq_zh/eq(1).latex">（采取干预措施以后，在每个时间点<img src="/static/eq_zh/eq(2).latex">，平均一个人感染多少人）是反映这个传染病的内在属性和检测防控的重要指标。
+                    <p>一个传染病的基本再生数<img src="./static/eq_zh/eq.latex">（不采取干预措施的条件下，平均一个人传染多少个人）和时间变化的有效再生数<img src="./static/eq_zh/eq(1).latex">（采取干预措施以后，在每个时间点<img src="./static/eq_zh/eq(2).latex">，平均一个人感染多少人）是反映这个传染病的内在属性和检测防控的重要指标。
                     </p>
                     <p>在这里，我们将提供我们能够获取到数据的全球各个地区的有效再生数时间序列。同时，我们也会按照这个有效再生数时间序列做一些简单外推型的预测。
                     </p>
                     <div class="line"></div>
 
                     <h2><span id="Methods">分析方法</span></h2>
-                    <p>我们在前期研究中，注意到输入病人的有效再生数<img src="/static/eq_zh/eq(3).latex">可能和本地病人的有效再生数<img src="/static/eq_zh/eq(4).latex">，因此我们
+                    <p>我们在前期研究中，注意到输入病人的有效再生数<img src="./static/eq_zh/eq(3).latex">可能和本地病人的有效再生数<img src="./static/eq_zh/eq(4).latex">，因此我们
                     </p>
-                    <ol><li> 从统计数据中区分了各个地区的输入性病人（零代）<img src="/static/eq_zh/eq(5).latex">、输入性病人传染的本地病人（一代）<img src="/static/eq_zh/eq(6).latex">和本地病人传染的本地病人（二代以及以上）<img src="/static/eq_zh/eq(7).latex">，</li>
-                    <li> 推导了从<img src="/static/eq_zh/eq(8).latex">计算<img src="/static/eq_zh/eq(9).latex">的公式，</li>
+                    <ol><li> 从统计数据中区分了各个地区的输入性病人（零代）<img src="./static/eq_zh/eq(5).latex">、输入性病人传染的本地病人（一代）<img src="./static/eq_zh/eq(6).latex">和本地病人传染的本地病人（二代以及以上）<img src="./static/eq_zh/eq(7).latex">，</li>
+                    <li> 推导了从<img src="./static/eq_zh/eq(8).latex">计算<img src="./static/eq_zh/eq(9).latex">的公式，</li>
                     <li> 在软件EpiEstim的基础上，实现了上面的计算分析。</li></ol>
                     <p>顺便，软件本身的测试版已经提供在Github上。计算公式的初稿马上就会放出来。
                     </p><p>在获得再生数时间序列的基础上，我们还构造了两个简单外推模型来做一些非常粗糙的预测
@@ -147,12 +147,12 @@
                     <h3><span id="Appendex_to_the_methods_section">方法部分的附录：核心公式</span></h3>
                     <p>如果你还对我们的计算框架的细节感兴趣，这是其中的几个核心公式。
                     </p>
-                    <ol><li> 特定城市输入病人（称为零代病人）的一代感染者数量<img src="/static/eq_zh/eq(10).latex"></li>
-                    <li> 本地城市二代以及二代以上以上感染者数量<img src="/static/eq_zh/eq(11).latex"></li></ol>
+                    <ol><li> 特定城市输入病人（称为零代病人）的一代感染者数量<img src="./static/eq_zh/eq(10).latex"></li>
+                    <li> 本地城市二代以及二代以上以上感染者数量<img src="./static/eq_zh/eq(11).latex"></li></ol>
                     <p>相应的再生数为，
                     </p>
-                    <ol><li> <img src="/static/eq_zh/eq(12).latex"></li>
-                    <li> <img src="/static/eq_zh/eq(13).latex"></li></ol>
+                    <ol><li> <img src="./static/eq_zh/eq(12).latex"></li>
+                    <li> <img src="./static/eq_zh/eq(13).latex"></li></ol>
                     <p>更多解释见[<a rel="nofollow" class="external text" href="http://www.bigphysics.org/index.php/%E5%88%86%E7%B1%BB:%E8%80%83%E8%99%91%E4%BA%BA%E5%8F%A3%E6%B5%81%E5%8A%A8%E7%9A%84%E4%BC%A0%E6%9F%93%E7%97%85%E6%A8%A1%E5%9E%8B#.E8.80.83.E8.99.91.E8.BE.93.E5.85.A5.E6.80.A7.E7.97.85.E4.BA.BA.E7.9A.84.E6.A8.A1.E5.9E.8B">考虑输入病人的模型</a>]。
                     </p>
 
@@ -164,12 +164,12 @@
                     <h3><span id="Typical_region_I:_China_except_Hubei">典型地区一：中国除去湖北之外的再生数</span></h3>
                     <p>我们区分了中国湖北之外的数据中的输入、输入感染、本地感染三种病人，用发展了的方法做了有效再生数的计算。顺便，注意区分三种病人和不区分得到的再生数时间学列的结果相差非常大。</p>
                     <p>
-                        <img alt="中国湖北之外的再生数，区分输入、输入感染、本地感染三种病人的计算" src="/static/COVIDR.png" width="500" height="500">
+                        <img alt="中国湖北之外的再生数，区分输入、输入感染、本地感染三种病人的计算" src="./static/COVIDR.png" width="500" height="500">
                     </p>
                     <p>中国湖北之外的再生数，区分输入、输入感染、本地感染三种病人的计算
                     </p>
                     <p>
-                        <img alt="中国湖北之外的再生数，区分输入、本地两种病人的计算" src="/static/COVIDR2.png" width="500" height="500">
+                        <img alt="中国湖北之外的再生数，区分输入、本地两种病人的计算" src="./static/COVIDR2.png" width="500" height="500">
                     </p>
                     <p>
                         中国湖北之外的再生数，区分输入、本地两种病人的计算
@@ -182,7 +182,7 @@
 
                     <h3><span id="Typical_region_II:_Singapore">典型地区二：新加坡的再生数</span></h3>
                     <p>
-                        <img alt="新加坡的再生数，由于数据限制没有输入和本地病人" src="/static/Singapore_R.png" width="500" height="500" srcset="/images/thumb/0/04/Singapore_R.png/750px-Singapore_R.png 1.5x, /images/thumb/0/04/Singapore_R.png/1000px-Singapore_R.png 2x"></a>
+                        <img alt="新加坡的再生数，由于数据限制没有输入和本地病人" src="./static/Singapore_R.png" width="500" height="500" srcset="/images/thumb/0/04/Singapore_R.png/750px-Singapore_R.png 1.5x, /images/thumb/0/04/Singapore_R.png/1000px-Singapore_R.png 2x"></a>
                     </p>
                     <p>这是新加坡的再生数时间序列。由于数据限制，没有输入和本地病人。
                     </p>
@@ -198,18 +198,18 @@
                     <h3><span id="France">法国</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_France">法国再生数时间序列</span></h4>
                     <p>
-                        <img alt="法国的再生数，未区分输入和本地病人" src="/static/France_R.png" width="500" height="500">
+                        <img alt="法国的再生数，未区分输入和本地病人" src="./static/France_R.png" width="500" height="500">
                     </p>
                     <p>法国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_France:_Null_Scenario">法国简单外推预测</span></h4>
-                    <p><img alt="法国再生数末位值外推结果" src="/static/France_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="法国再生数末位值外推结果" src="./static/France_null_incidence.png" width="500" height="500"></p>
                     <p>法国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_France:_Typical-region_Scenario">法国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="法国用中国再生数时间序列接上的结果" src="/static/France_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="法国用中国再生数时间序列接上的结果" src="./static/France_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>法国用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="法国用新加坡再生数时间序列接上的结果" src="/static/France_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="法国用新加坡再生数时间序列接上的结果" src="./static/France_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>法国用新加坡再生数时间序列接上的结果
                     </p>
@@ -218,18 +218,18 @@
                     <h3><span id="Germany">德国</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_Germany">德国再生数时间序列</span></h4>
                     <p>
-                        <img alt="德国的再生数，未区分输入和本地病人" src="/static/Germany_R.png" width="500" height="500">
+                        <img alt="德国的再生数，未区分输入和本地病人" src="./static/Germany_R.png" width="500" height="500">
                     </p>
                     <p>德国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Germany:_Null_Scenario">德国简单外推预测</span></h4>
-                    <p><img alt="德国再生数末位值外推结果" src="/static/Germany_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="德国再生数末位值外推结果" src="./static/Germany_null_incidence.png" width="500" height="500"></p>
                     <p>德国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Germany:_Typical-region_Scenario">德国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="德国用中国再生数时间序列接上的结果" src="/static/Germany_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="德国用中国再生数时间序列接上的结果" src="./static/Germany_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>德国用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="德国用新加坡再生数时间序列接上的结果" src="/static/Germany_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="德国用新加坡再生数时间序列接上的结果" src="./static/Germany_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>德国用新加坡再生数时间序列接上的结果
                     </p>
@@ -238,18 +238,18 @@
                     <h3><span id="Iran">伊朗</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_Iran">伊朗再生数时间序列</span></h4>
                     <p>
-                        <img alt="伊朗的再生数，未区分输入和本地病人" src="/static/Iran_R.png" width="500" height="500">
+                        <img alt="伊朗的再生数，未区分输入和本地病人" src="./static/Iran_R.png" width="500" height="500">
                     </p>
                     <p>伊朗的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Iran:_Null_Scenario">伊朗简单外推预测</span></h4>
-                    <p><img alt="伊朗再生数末位值外推结果" src="/static/Iran_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="伊朗再生数末位值外推结果" src="./static/Iran_null_incidence.png" width="500" height="500"></p>
                     <p>伊朗再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Iran:_Typical-region_Scenario">伊朗用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="伊朗用中国再生数时间序列接上的结果" src="/static/Iran_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="伊朗用中国再生数时间序列接上的结果" src="./static/Iran_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>伊朗用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="伊朗用新加坡再生数时间序列接上的结果" src="/static/Iran_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="伊朗用新加坡再生数时间序列接上的结果" src="./static/Iran_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>伊朗用新加坡再生数时间序列接上的结果
                     </p>
@@ -258,18 +258,18 @@
                     <h3><span  id="Italy">意大利</span></h3>
                     <h4><span  id="Time-varying_reproduction_number_of_Italy">意大利再生数时间序列</span></h4>
                     <p>
-                        <img alt="意大利的再生数，未区分输入和本地病人" src="/static/Italy_R.png" width="500" height="500" >
+                        <img alt="意大利的再生数，未区分输入和本地病人" src="./static/Italy_R.png" width="500" height="500" >
                     </p>
                     <p>意大利的再生数，未区分输入和本地病人</p>
                     <h4><span  id="Predictions_of_Italy:_Null_Scenario">意大利简单外推预测</span></h4>
-                    <p><img alt="意大利数末位值外推结果" src="/static/Italy_null_incidence.png" width="500" height="500" ></p>
+                    <p><img alt="意大利数末位值外推结果" src="./static/Italy_null_incidence.png" width="500" height="500" ></p>
                     <p>意大利再生数末位值外推结果</p>
                     <h4><span  id="Predictions_of_Italy:_Typical-region_Scenario">意大利用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="意大利用中国再生数时间序列接上的结果" src="/static/Italy_rcn_incidence.png" width="500" height="500" >
+                    <p><img alt="意大利用中国再生数时间序列接上的结果" src="./static/Italy_rcn_incidence.png" width="500" height="500" >
                     </p>
                     <p>意大利用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="意大利用新加坡再生数时间序列接上的结果" src="/static/Italy_rsg_incidence.png" width="500" height="500" >
+                    <p><img alt="意大利用新加坡再生数时间序列接上的结果" src="./static/Italy_rsg_incidence.png" width="500" height="500" >
                     </p>
                     <p>意大利用新加坡再生数时间序列接上的结果
                     </p>
@@ -278,18 +278,18 @@
                     <h3><span  id="Japan">日本</span></h3>
                     <h4><span  id="Time-varying_reproduction_number_of_Japan">日本再生数时间序列</span></h4>
                     <p>
-                        <img alt="日本的再生数，未区分输入和本地病人" src="/static/Japan_R.png" width="500" height="500" >
+                        <img alt="日本的再生数，未区分输入和本地病人" src="./static/Japan_R.png" width="500" height="500" >
                     </p>
                     <p>日本的再生数，未区分输入和本地病人</p>
                     <h4><span  id="Predictions_of_Japan:_Null_Scenario">日本简单外推预测</span></h4>
-                    <p><img alt="日本再生数末位值外推结果" src="/static/Japan_null_incidence.png" width="500" height="500" ></p>
+                    <p><img alt="日本再生数末位值外推结果" src="./static/Japan_null_incidence.png" width="500" height="500" ></p>
                     <p>日本再生数末位值外推结果</p>
                     <h4><span  id="Predictions_of_Japan:_Typical-region_Scenario">日本用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="日本用中国再生数时间序列接上的结果" src="/static/Japan_rcn_incidence.png" width="500" height="500" >
+                    <p><img alt="日本用中国再生数时间序列接上的结果" src="./static/Japan_rcn_incidence.png" width="500" height="500" >
                     </p>
                     <p>日本用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="日本用新加坡再生数时间序列接上的结果" src="/static/Japan_rsg_incidence.png" width="500" height="500" >
+                    <p><img alt="日本用新加坡再生数时间序列接上的结果" src="./static/Japan_rsg_incidence.png" width="500" height="500" >
                     </p>
                     <p>日本用新加坡再生数时间序列接上的结果
                     </p>
@@ -298,18 +298,18 @@
                     <h3><span id="Korea">韩国</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_Korea">韩国再生数时间序列</span></h4>
                     <p>
-                        <img alt="韩国的再生数，未区分输入和本地病人" src="/static/Korea_R.png" width="500" height="500">
+                        <img alt="韩国的再生数，未区分输入和本地病人" src="./static/Korea_R.png" width="500" height="500">
                     </p>
                     <p>韩国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Korea:_Null_Scenario">韩国简单外推预测</span></h4>
-                    <p><img alt="韩国再生数末位值外推结果" src="/static/Korea_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="韩国再生数末位值外推结果" src="./static/Korea_null_incidence.png" width="500" height="500"></p>
                     <p>韩国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Korea:_Typical-region_Scenario">韩国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="韩国用中国再生数时间序列接上的结果" src="/static/Korea_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="韩国用中国再生数时间序列接上的结果" src="./static/Korea_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>韩国用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="韩国用新加坡再生数时间序列接上的结果" src="/static/Korea_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="韩国用新加坡再生数时间序列接上的结果" src="./static/Korea_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>韩国用新加坡再生数时间序列接上的结果
                     </p>
@@ -318,18 +318,18 @@
                     <h3><span id="Spain">西班牙</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_Spain">西班牙再生数时间序列</span></h4>
                     <p>
-                        <img alt="西班牙的再生数，未区分输入和本地病人" src="/static/Spain_R.png" width="500" height="500">
+                        <img alt="西班牙的再生数，未区分输入和本地病人" src="./static/Spain_R.png" width="500" height="500">
                     </p>
                     <p>西班牙的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Spain:_Null_Scenario">西班牙简单外推预测</span></h4>
-                    <p><img alt="西班牙再生数末位值外推结果" src="/static/Spain_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="西班牙再生数末位值外推结果" src="./static/Spain_null_incidence.png" width="500" height="500"></p>
                     <p>西班牙再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Spain:_Typical-region_Scenario">西班牙用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="西班牙用中国再生数时间序列接上的结果" src="/static/Spain_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="西班牙用中国再生数时间序列接上的结果" src="./static/Spain_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>西班牙用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="西班牙用新加坡再生数时间序列接上的结果" src="/static/Spain_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="西班牙用新加坡再生数时间序列接上的结果" src="./static/Spain_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>西班牙用新加坡再生数时间序列接上的结果
                     </p>
@@ -338,18 +338,18 @@
                     <h3><span id="UK">英国</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_UK">英国再生数时间序列</span></h4>
                     <p>
-                        <img alt="英国的再生数，未区分输入和本地病人" src="/static/UK_R.png" width="500" height="500">
+                        <img alt="英国的再生数，未区分输入和本地病人" src="./static/UK_R.png" width="500" height="500">
                     </p>
                     <p>英国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_UK:_Null_Scenario">英国简单外推预测</span></h4>
-                    <p><img alt="英国再生数末位值外推结果" src="/static/UK_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="英国再生数末位值外推结果" src="./static/UK_null_incidence.png" width="500" height="500"></p>
                     <p>英国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_UK:_Typical-region_Scenario">英国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="英国用中国再生数时间序列接上的结果" src="/static/UK_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="英国用中国再生数时间序列接上的结果" src="./static/UK_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>英国用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="英国用新加坡再生数时间序列接上的结果" src="/static/UK_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="英国用新加坡再生数时间序列接上的结果" src="./static/UK_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>英国用新加坡再生数时间序列接上的结果
                     </p>
@@ -358,18 +358,18 @@
                     <h3><span id="USA">美国</span></h3>
                     <h4><span id="Time-varying_reproduction_number_of_USA">美国再生数时间序列</span></h4>
                     <p>
-                        <img alt="美国的再生数，未区分输入和本地病人" src="/static/USA_R.png" width="500" height="500">
+                        <img alt="美国的再生数，未区分输入和本地病人" src="./static/USA_R.png" width="500" height="500">
                     </p>
                     <p>美国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_USA:_Null_Scenario">美国简单外推预测</span></h4>
-                    <p><img alt="美国再生数末位值外推结果" src="/static/USA_null_incidence.png" width="500" height="500"></p>
+                    <p><img alt="美国再生数末位值外推结果" src="./static/USA_null_incidence.png" width="500" height="500"></p>
                     <p>美国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_USA:_Typical-region_Scenario">美国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p><img alt="美国用中国再生数时间序列接上的结果" src="/static/USA_rcn_incidence.png" width="500" height="500">
+                    <p><img alt="美国用中国再生数时间序列接上的结果" src="./static/USA_rcn_incidence.png" width="500" height="500">
                     </p>
                     <p>美国用中国再生数时间序列接上的结果
                     </p>
-                    <p><img alt="美国用新加坡再生数时间序列接上的结果" src="/static/USA_rsg_incidence.png" width="500" height="500">
+                    <p><img alt="美国用新加坡再生数时间序列接上的结果" src="./static/USA_rsg_incidence.png" width="500" height="500">
                     </p>
                     <p>美国用新加坡再生数时间序列接上的结果
                     </p>
