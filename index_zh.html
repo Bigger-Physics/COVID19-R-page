@@ -16,6 +16,8 @@
     <!-- Font Awesome JS -->
     <script defer src="https://cdn.bootcss.com/font-awesome/5.12.1/js/solid.min.js"></script>
     <script defer src="https://cdn.bootcss.com/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.7.0/echarts.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.2/axios.min.js"></script>
 
 </head>
 
@@ -170,16 +172,81 @@
                 </p>
                 <h3><span id="Typical_region_I:_China_except_Hubei">典型地区一：中国除去湖北之外的再生数</span></h3>
                 <p>
-                    我们区分了中国湖北之外的数据中的输入、输入感染、本地感染三种病人，用发展了的方法做了有效再生数的计算。顺便，注意区分三种病人和不区分得到的再生数时间学列的结果相差非常大。</p>
-                <p>
-                    <img alt="中国湖北之外的再生数，区分输入、输入感染、本地感染三种病人的计算" src="./static/COVIDR.png" width="500" height="500">
+                    我们区分了中国湖北之外的数据中的输入、输入感染、本地感染三种病人，用发展了的方法做了有效再生数的计算。顺便，注意区分三种病人和不区分得到的再生数时间学列的结果相差非常大。
                 </p>
+                <div class="row">
+                    <div class="col">
+                        <div id="China_incid" class="chart"></div>
+                        <script type="text/javascript">
+                        var chartChinaIncid = echarts.init(document.getElementById('China_incid'));
+                            axios.get('./static/data/China_incid.json')
+                            .then(function (response) {
+                                var option = response.data;
+                                chartChinaIncid.setOption(option);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                        </script>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="China_Rs" class="chart"></div>
+                        <script type="text/javascript">
+                        var chartChinaRs = echarts.init(document.getElementById('China_Rs'));
+                            axios.get('./static/data/China_Rs.json')
+                            .then(function (response) {
+                                var option = response.data;
+                                chartChinaRs.setOption(option);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                        </script>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
+
                 <p>
                     中国湖北之外的再生数，区分输入、输入感染、本地感染三种病人的计算
                 </p>
-                <p>
-                    <img alt="中国湖北之外的再生数，区分输入、本地两种病人的计算" src="./static/COVIDR2.png" width="500" height="500">
-                </p>
+                <div class="row">
+                    <div class="col">
+                        <div id="China_incid_2" class="chart"></div>
+                        <script type="text/javascript">
+                        var chartChinaIncid2 = echarts.init(document.getElementById('China_incid_2'));
+                            axios.get('./static/data/China_incid_2.json')
+                            .then(function (response) {
+                                var option = response.data;
+                                chartChinaIncid2.setOption(option);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                        </script>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="China_R_2" class="chart"></div>
+                        <script type="text/javascript">
+                        var chartChinaR2 = echarts.init(document.getElementById('China_R_2'));
+                            axios.get('./static/data/China_R_2.json')
+                            .then(function (response) {
+                                var option = response.data;
+                                chartChinaR2.setOption(option);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                        </script>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
+
                 <p>
                     中国湖北之外的再生数，区分输入、本地两种病人的计算
                 </p>
@@ -188,9 +255,40 @@
                 </p>
                 <p><br> </p>
                 <h3><span id="Typical_region_II:_Singapore">典型地区二：新加坡的再生数</span></h3>
-                <p>
-                    <img alt="新加坡的再生数，由于数据限制没有输入和本地病人" src="./static/Singapore_R.png" width="500" height="500" srcset="/images/thumb/0/04/Singapore_R.png/750px-Singapore_R.png 1.5x, /images/thumb/0/04/Singapore_R.png/1000px-Singapore_R.png 2x"></a>
-                </p>
+                <div class="row">
+                    <div class="col">
+                        <div id="Singapore_incid" class="chart"></div>
+                        <script type="text/javascript">
+                        var chartSingaporeincid = echarts.init(document.getElementById('Singapore_incid'));
+                            axios.get('./static/data/Singapore_incid.json')
+                            .then(function (response) {
+                                var option = response.data;
+                                chartSingaporeincid.setOption(option);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                        </script>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="Singapore_R" class="chart"></div>
+                        <script type="text/javascript">
+                        var chartSingaporeR = echarts.init(document.getElementById('Singapore_R'));
+                            axios.get('./static/data/Singapore_R.json')
+                            .then(function (response) {
+                                var option = response.data;
+                                chartSingaporeR.setOption(option);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                        </script>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
                 <p>
                     这是新加坡的再生数时间序列。由于数据限制，没有输入和本地病人。
                 </p>
@@ -209,21 +307,147 @@
                     法国</a></span></h3>
                 <div id="France" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_France">法国再生数时间序列</span></h4>
-                    <p>
-                        <img alt="法国的再生数，未区分输入和本地病人" src="./static/France_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceincid = echarts.init(document.getElementById('France_incid'));
+                                axios.get('./static/data/France_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceR = echarts.init(document.getElementById('France_R'));
+                                axios.get('./static/data/France_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>法国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_France:_Null_Scenario">法国简单外推预测</span></h4>
-                    <p><img alt="法国再生数末位值外推结果" src="./static/France_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceNullResultIncidence = echarts.init(document.getElementById('France_null_result_incidence'));
+                                axios.get('./static/data/France_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceNullResultCumIncidence = echarts.init(document.getElementById('France_null_result_cum_incidence'));
+                                axios.get('./static/data/France_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>法国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_France:_Typical-region_Scenario">法国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="法国用中国再生数时间序列接上的结果" src="./static/France_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceRcnResultIncidence = echarts.init(document.getElementById('France_Rcn_result_incidence'));
+                                axios.get('./static/data/France_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceRcnResultCumIncidence = echarts.init(document.getElementById('France_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/France_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>法国用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="法国用新加坡再生数时间序列接上的结果" src="./static/France_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceRsgResultIncidence = echarts.init(document.getElementById('France_Rsg_result_incidence'));
+                                axios.get('./static/data/France_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="France_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartFranceRsgResultCumIncidence = echarts.init(document.getElementById('France_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/France_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartFranceRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>法国用新加坡再生数时间序列接上的结果</p>
                 </div>
 
@@ -232,21 +456,147 @@
                     德国</a></span></h3>
                 <div id="Germany" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_Germany">德国再生数时间序列</span></h4>
-                    <p>
-                        <img alt="德国的再生数，未区分输入和本地病人" src="./static/Germany_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyincid = echarts.init(document.getElementById('Germany_incid'));
+                                axios.get('./static/data/Germany_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyR = echarts.init(document.getElementById('Germany_R'));
+                                axios.get('./static/data/Germany_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>德国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Germany:_Null_Scenario">德国简单外推预测</span></h4>
-                    <p><img alt="德国再生数末位值外推结果" src="./static/Germany_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyNullResultIncidence = echarts.init(document.getElementById('Germany_null_result_incidence'));
+                                axios.get('./static/data/Germany_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyNullResultCumIncidence = echarts.init(document.getElementById('Germany_null_result_cum_incidence'));
+                                axios.get('./static/data/Germany_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>德国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Germany:_Typical-region_Scenario">德国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="德国用中国再生数时间序列接上的结果" src="./static/Germany_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyRcnResultIncidence = echarts.init(document.getElementById('Germany_Rcn_result_incidence'));
+                                axios.get('./static/data/Germany_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyRcnResultCumIncidence = echarts.init(document.getElementById('Germany_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/Germany_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>德国用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="德国用新加坡再生数时间序列接上的结果" src="./static/Germany_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyRsgResultIncidence = echarts.init(document.getElementById('Germany_Rsg_result_incidence'));
+                                axios.get('./static/data/Germany_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Germany_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartGermanyRsgResultCumIncidence = echarts.init(document.getElementById('Germany_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/Germany_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartGermanyRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>德国用新加坡再生数时间序列接上的结果</p>
                 </div>
             
@@ -255,21 +605,147 @@
                     伊朗</a></span></h3>
                 <div id="Iran" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_Iran">伊朗再生数时间序列</span></h4>
-                    <p>
-                        <img alt="伊朗的再生数，未区分输入和本地病人" src="./static/Iran_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranincid = echarts.init(document.getElementById('Iran_incid'));
+                                axios.get('./static/data/Iran_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranR = echarts.init(document.getElementById('Iran_R'));
+                                axios.get('./static/data/Iran_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>伊朗的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Iran:_Null_Scenario">伊朗简单外推预测</span></h4>
-                    <p><img alt="伊朗再生数末位值外推结果" src="./static/Iran_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranNullResultIncidence = echarts.init(document.getElementById('Iran_null_result_incidence'));
+                                axios.get('./static/data/Iran_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranNullResultCumIncidence = echarts.init(document.getElementById('Iran_null_result_cum_incidence'));
+                                axios.get('./static/data/Iran_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>伊朗再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Iran:_Typical-region_Scenario">伊朗用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="伊朗用中国再生数时间序列接上的结果" src="./static/Iran_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranRcnResultIncidence = echarts.init(document.getElementById('Iran_Rcn_result_incidence'));
+                                axios.get('./static/data/Iran_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranRcnResultCumIncidence = echarts.init(document.getElementById('Iran_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/Iran_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>伊朗用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="伊朗用新加坡再生数时间序列接上的结果" src="./static/Iran_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranRsgResultIncidence = echarts.init(document.getElementById('Iran_Rsg_result_incidence'));
+                                axios.get('./static/data/Iran_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Iran_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartIranRsgResultCumIncidence = echarts.init(document.getElementById('Iran_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/Iran_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartIranRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>伊朗用新加坡再生数时间序列接上的结果</p>
                 </div>        
 
@@ -278,21 +754,147 @@
                     意大利</a></span></h3>
                 <div id="Italy" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_Italy">意大利再生数时间序列</span></h4>
-                    <p>
-                        <img alt="意大利的再生数，未区分输入和本地病人" src="./static/Italy_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyincid = echarts.init(document.getElementById('Italy_incid'));
+                                axios.get('./static/data/Italy_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyR = echarts.init(document.getElementById('Italy_R'));
+                                axios.get('./static/data/Italy_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>意大利的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Italy:_Null_Scenario">意大利简单外推预测</span></h4>
-                    <p><img alt="意大利再生数末位值外推结果" src="./static/Italy_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyNullResultIncidence = echarts.init(document.getElementById('Italy_null_result_incidence'));
+                                axios.get('./static/data/Italy_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyNullResultCumIncidence = echarts.init(document.getElementById('Italy_null_result_cum_incidence'));
+                                axios.get('./static/data/Italy_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>意大利再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Italy:_Typical-region_Scenario">意大利用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="意大利用中国再生数时间序列接上的结果" src="./static/Italy_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyRcnResultIncidence = echarts.init(document.getElementById('Italy_Rcn_result_incidence'));
+                                axios.get('./static/data/Italy_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyRcnResultCumIncidence = echarts.init(document.getElementById('Italy_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/Italy_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>意大利用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="意大利用新加坡再生数时间序列接上的结果" src="./static/Italy_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyRsgResultIncidence = echarts.init(document.getElementById('Italy_Rsg_result_incidence'));
+                                axios.get('./static/data/Italy_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Italy_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartItalyRsgResultCumIncidence = echarts.init(document.getElementById('Italy_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/Italy_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartItalyRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>意大利用新加坡再生数时间序列接上的结果</p>
                 </div>        
             
@@ -301,21 +903,147 @@
                     日本</a></span></h3>
                 <div id="Japan" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_Japan">日本再生数时间序列</span></h4>
-                    <p>
-                        <img alt="日本的再生数，未区分输入和本地病人" src="./static/Japan_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanincid = echarts.init(document.getElementById('Japan_incid'));
+                                axios.get('./static/data/Japan_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanR = echarts.init(document.getElementById('Japan_R'));
+                                axios.get('./static/data/Japan_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>日本的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Japan:_Null_Scenario">日本简单外推预测</span></h4>
-                    <p><img alt="日本再生数末位值外推结果" src="./static/Japan_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanNullResultIncidence = echarts.init(document.getElementById('Japan_null_result_incidence'));
+                                axios.get('./static/data/Japan_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanNullResultCumIncidence = echarts.init(document.getElementById('Japan_null_result_cum_incidence'));
+                                axios.get('./static/data/Japan_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>日本再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Japan:_Typical-region_Scenario">日本用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="日本用中国再生数时间序列接上的结果" src="./static/Japan_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanRcnResultIncidence = echarts.init(document.getElementById('Japan_Rcn_result_incidence'));
+                                axios.get('./static/data/Japan_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanRcnResultCumIncidence = echarts.init(document.getElementById('Japan_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/Japan_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>日本用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="日本用新加坡再生数时间序列接上的结果" src="./static/Japan_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanRsgResultIncidence = echarts.init(document.getElementById('Japan_Rsg_result_incidence'));
+                                axios.get('./static/data/Japan_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Japan_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartJapanRsgResultCumIncidence = echarts.init(document.getElementById('Japan_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/Japan_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartJapanRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>日本用新加坡再生数时间序列接上的结果</p>
                 </div>        
 
@@ -324,21 +1052,147 @@
                     韩国</a></span></h3>
                 <div id="Korea" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_Korea">韩国再生数时间序列</span></h4>
-                    <p>
-                        <img alt="韩国的再生数，未区分输入和本地病人" src="./static/Korea_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaincid = echarts.init(document.getElementById('Korea_incid'));
+                                axios.get('./static/data/Korea_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaR = echarts.init(document.getElementById('Korea_R'));
+                                axios.get('./static/data/Korea_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>韩国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Korea:_Null_Scenario">韩国简单外推预测</span></h4>
-                    <p><img alt="韩国再生数末位值外推结果" src="./static/Korea_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaNullResultIncidence = echarts.init(document.getElementById('Korea_null_result_incidence'));
+                                axios.get('./static/data/Korea_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaNullResultCumIncidence = echarts.init(document.getElementById('Korea_null_result_cum_incidence'));
+                                axios.get('./static/data/Korea_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>韩国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Korea:_Typical-region_Scenario">韩国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="韩国用中国再生数时间序列接上的结果" src="./static/Korea_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaRcnResultIncidence = echarts.init(document.getElementById('Korea_Rcn_result_incidence'));
+                                axios.get('./static/data/Korea_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaRcnResultCumIncidence = echarts.init(document.getElementById('Korea_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/Korea_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>韩国用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="韩国用新加坡再生数时间序列接上的结果" src="./static/Korea_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaRsgResultIncidence = echarts.init(document.getElementById('Korea_Rsg_result_incidence'));
+                                axios.get('./static/data/Korea_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Korea_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartKoreaRsgResultCumIncidence = echarts.init(document.getElementById('Korea_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/Korea_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartKoreaRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>韩国用新加坡再生数时间序列接上的结果</p>
                 </div>
             
@@ -347,21 +1201,147 @@
                     西班牙</a></span></h3>
                 <div id="Spain" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_Spain">西班牙再生数时间序列</span></h4>
-                    <p>
-                        <img alt="西班牙的再生数，未区分输入和本地病人" src="./static/Spain_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainincid = echarts.init(document.getElementById('Spain_incid'));
+                                axios.get('./static/data/Spain_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainR = echarts.init(document.getElementById('Spain_R'));
+                                axios.get('./static/data/Spain_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>西班牙的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_Spain:_Null_Scenario">西班牙简单外推预测</span></h4>
-                    <p><img alt="西班牙再生数末位值外推结果" src="./static/Spain_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainNullResultIncidence = echarts.init(document.getElementById('Spain_null_result_incidence'));
+                                axios.get('./static/data/Spain_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainNullResultCumIncidence = echarts.init(document.getElementById('Spain_null_result_cum_incidence'));
+                                axios.get('./static/data/Spain_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>西班牙再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_Spain:_Typical-region_Scenario">西班牙用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="西班牙用中国再生数时间序列接上的结果" src="./static/Spain_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainRcnResultIncidence = echarts.init(document.getElementById('Spain_Rcn_result_incidence'));
+                                axios.get('./static/data/Spain_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainRcnResultCumIncidence = echarts.init(document.getElementById('Spain_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/Spain_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>西班牙用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="西班牙用新加坡再生数时间序列接上的结果" src="./static/Spain_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainRsgResultIncidence = echarts.init(document.getElementById('Spain_Rsg_result_incidence'));
+                                axios.get('./static/data/Spain_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="Spain_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartSpainRsgResultCumIncidence = echarts.init(document.getElementById('Spain_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/Spain_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartSpainRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>西班牙用新加坡再生数时间序列接上的结果</p>
                 </div>
             
@@ -370,21 +1350,147 @@
                     英国</a></span></h3>
                 <div id="UK" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_UK">英国再生数时间序列</span></h4>
-                    <p>
-                        <img alt="英国的再生数，未区分输入和本地病人" src="./static/UK_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKincid = echarts.init(document.getElementById('UK_incid'));
+                                axios.get('./static/data/UK_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKR = echarts.init(document.getElementById('UK_R'));
+                                axios.get('./static/data/UK_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>英国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_UK:_Null_Scenario">英国简单外推预测</span></h4>
-                    <p><img alt="英国再生数末位值外推结果" src="./static/UK_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKNullResultIncidence = echarts.init(document.getElementById('UK_null_result_incidence'));
+                                axios.get('./static/data/UK_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKNullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKNullResultCumIncidence = echarts.init(document.getElementById('UK_null_result_cum_incidence'));
+                                axios.get('./static/data/UK_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKNullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>英国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_UK:_Typical-region_Scenario">英国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="英国用中国再生数时间序列接上的结果" src="./static/UK_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKRcnResultIncidence = echarts.init(document.getElementById('UK_Rcn_result_incidence'));
+                                axios.get('./static/data/UK_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKRcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKRcnResultCumIncidence = echarts.init(document.getElementById('UK_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/UK_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKRcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>英国用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="英国用新加坡再生数时间序列接上的结果" src="./static/UK_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKRsgResultIncidence = echarts.init(document.getElementById('UK_Rsg_result_incidence'));
+                                axios.get('./static/data/UK_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKRsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="UK_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUKRsgResultCumIncidence = echarts.init(document.getElementById('UK_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/UK_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUKRsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>英国用新加坡再生数时间序列接上的结果</p>
                 </div>        
 
@@ -393,21 +1499,147 @@
                     美国</a></span></h3>
                 <div id="USA" class="collapse">
                     <h4><span id="Time-varying_reproduction_number_of_USA">美国再生数时间序列</span></h4>
-                    <p>
-                        <img alt="美国的再生数，未区分输入和本地病人" src="./static/USA_R.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_incid" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSAincid = echarts.init(document.getElementById('USA_incid'));
+                                axios.get('./static/data/USA_incid.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSAincid.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_R" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSAR = echarts.init(document.getElementById('USA_R'));
+                                axios.get('./static/data/USA_R.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSAR.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>美国的再生数，未区分输入和本地病人</p>
                     <h4><span id="Predictions_of_USA:_Null_Scenario">美国简单外推预测</span></h4>
-                    <p><img alt="美国再生数末位值外推结果" src="./static/USA_null_incidence.png" width="500" height="500"></p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_null_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSANullResultIncidence = echarts.init(document.getElementById('USA_null_result_incidence'));
+                                axios.get('./static/data/USA_null_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSANullResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_null_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSANullResultCumIncidence = echarts.init(document.getElementById('USA_null_result_cum_incidence'));
+                                axios.get('./static/data/USA_null_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSANullResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>美国再生数末位值外推结果</p>
                     <h4><span id="Predictions_of_USA:_Typical-region_Scenario">美国用中国和新加坡再生数时间序列接上得到的预测</span></h4>
-                    <p>
-                        <img alt="美国用中国再生数时间序列接上的结果" src="./static/USA_rcn_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_Rcn_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSARcnResultIncidence = echarts.init(document.getElementById('USA_Rcn_result_incidence'));
+                                axios.get('./static/data/USA_Rcn_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSARcnResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_Rcn_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSARcnResultCumIncidence = echarts.init(document.getElementById('USA_Rcn_result_cum_incidence'));
+                                axios.get('./static/data/USA_Rcn_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSARcnResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>                    
                     <p>美国用中国再生数时间序列接上的结果</p>
-                    <p>
-                        <img alt="美国用新加坡再生数时间序列接上的结果" src="./static/USA_rsg_incidence.png" width="500" height="500">
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_Rsg_result_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSARsgResultIncidence = echarts.init(document.getElementById('USA_Rsg_result_incidence'));
+                                axios.get('./static/data/USA_Rsg_result_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSARsgResultIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="USA_Rsg_result_cum_incidence" class="chart"></div>
+                            <script type="text/javascript">
+                            var chartUSARsgResultCumIncidence = echarts.init(document.getElementById('USA_Rsg_result_cum_incidence'));
+                                axios.get('./static/data/USA_Rsg_result_cum_incidence.json')
+                                .then(function (response) {
+                                    var option = response.data;
+                                    chartUSARsgResultCumIncidence.setOption(option);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                            </script>
+                        </div>
+                        <!-- <div class="col"></div> -->
+                    </div>
                     <p>美国用新加坡再生数时间序列接上的结果</p>
                 </div>        
             </div>                    
