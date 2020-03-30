@@ -623,12 +623,7 @@
  "xAxis": {
   "type": "time"
  },
- "yAxis": {
-  "name": "Incidence",
-  "nameTextStyle": {
-   "fontWeight": "bold"
-  }
- },
+ "yAxis": {},
  "series": [
   {
    "type": "line",

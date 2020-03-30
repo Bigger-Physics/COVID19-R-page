@@ -503,12 +503,7 @@
  "xAxis": {
   "type": "time"
  },
- "yAxis": {
-  "name": "Cumulative Incidence",
-  "nameTextStyle": {
-   "fontWeight": "bold"
-  }
- },
+ "yAxis": {},
  "series": [
   {
    "type": "line",
