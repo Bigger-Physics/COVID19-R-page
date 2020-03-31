@@ -343,6 +343,36 @@
     "dates": "2020-03-24",
     "imported": 32,
     "local": 17
+   },
+   {
+    "dates": "2020-03-25",
+    "imported": 38,
+    "local": 35
+   },
+   {
+    "dates": "2020-03-26",
+    "imported": 28,
+    "local": 24
+   },
+   {
+    "dates": "2020-03-27",
+    "imported": 22,
+    "local": 27
+   },
+   {
+    "dates": "2020-03-28",
+    "imported": 41,
+    "local": 29
+   },
+   {
+    "dates": "2020-03-29",
+    "imported": 24,
+    "local": 18
+   },
+   {
+    "dates": "2020-03-30",
+    "imported": 9,
+    "local": 26
    }
   ]
  },
