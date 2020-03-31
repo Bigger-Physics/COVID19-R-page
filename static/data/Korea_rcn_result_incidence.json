@@ -484,43 +484,43 @@
     "date": "2020-03-30",
     "Mean(I)": 7.0,
     "Lower(I)": 2.0,
-    "Upper(I)": 11.0,
-    "Range(I)": 9.0
+    "Upper(I)": 12.0,
+    "Range(I)": 10.0
    },
    {
     "date": "2020-03-31",
-    "Mean(I)": 13.0,
-    "Lower(I)": 6.0,
-    "Upper(I)": 20.0,
-    "Range(I)": 14.0
+    "Mean(I)": 14.0,
+    "Lower(I)": 8.0,
+    "Upper(I)": 21.0,
+    "Range(I)": 12.0
    },
    {
     "date": "2020-04-01",
-    "Mean(I)": 12.0,
-    "Lower(I)": 6.0,
+    "Mean(I)": 11.0,
+    "Lower(I)": 5.0,
     "Upper(I)": 18.0,
-    "Range(I)": 12.0
+    "Range(I)": 13.0
    },
    {
     "date": "2020-04-02",
     "Mean(I)": 9.0,
     "Lower(I)": 4.0,
-    "Upper(I)": 14.0,
-    "Range(I)": 10.0
+    "Upper(I)": 15.0,
+    "Range(I)": 11.0
    },
    {
     "date": "2020-04-03",
     "Mean(I)": 8.0,
-    "Lower(I)": 4.0,
-    "Upper(I)": 13.0,
-    "Range(I)": 9.0
+    "Lower(I)": 3.0,
+    "Upper(I)": 16.0,
+    "Range(I)": 13.0
    },
    {
     "date": "2020-04-04",
     "Mean(I)": 7.0,
     "Lower(I)": 2.0,
-    "Upper(I)": 12.0,
-    "Range(I)": 10.0
+    "Upper(I)": 13.0,
+    "Range(I)": 11.0
    },
    {
     "date": "2020-04-05",
@@ -531,17 +531,17 @@
    },
    {
     "date": "2020-04-06",
-    "Mean(I)": 6.0,
-    "Lower(I)": 2.0,
-    "Upper(I)": 10.0,
-    "Range(I)": 8.0
+    "Mean(I)": 5.0,
+    "Lower(I)": 1.0,
+    "Upper(I)": 11.0,
+    "Range(I)": 10.0
    },
    {
     "date": "2020-04-07",
-    "Mean(I)": 5.0,
-    "Lower(I)": 1.0,
+    "Mean(I)": 4.0,
+    "Lower(I)": 0.0,
     "Upper(I)": 9.0,
-    "Range(I)": 8.0
+    "Range(I)": 9.0
    },
    {
     "date": "2020-04-08",
@@ -582,8 +582,8 @@
     "date": "2020-04-13",
     "Mean(I)": 2.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 5.0,
-    "Range(I)": 5.0
+    "Upper(I)": 6.0,
+    "Range(I)": 6.0
    },
    {
     "date": "2020-04-14",
@@ -596,8 +596,8 @@
     "date": "2020-04-15",
     "Mean(I)": 1.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 5.0,
-    "Range(I)": 5.0
+    "Upper(I)": 4.0,
+    "Range(I)": 4.0
    },
    {
     "date": "2020-04-16",
@@ -631,8 +631,8 @@
     "date": "2020-04-20",
     "Mean(I)": 1.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 2.0,
-    "Range(I)": 2.0
+    "Upper(I)": 3.0,
+    "Range(I)": 3.0
    },
    {
     "date": "2020-04-21",
@@ -645,8 +645,8 @@
     "date": "2020-04-22",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 3.0,
-    "Range(I)": 3.0
+    "Upper(I)": 2.0,
+    "Range(I)": 2.0
    },
    {
     "date": "2020-04-23",
@@ -659,8 +659,8 @@
     "date": "2020-04-24",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 3.0,
-    "Range(I)": 3.0
+    "Upper(I)": 1.0,
+    "Range(I)": 1.0
    },
    {
     "date": "2020-04-25",
@@ -673,22 +673,22 @@
     "date": "2020-04-26",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 1.0,
-    "Range(I)": 1.0
+    "Upper(I)": 2.0,
+    "Range(I)": 2.0
    },
    {
     "date": "2020-04-27",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 2.0,
-    "Range(I)": 2.0
+    "Upper(I)": 1.0,
+    "Range(I)": 1.0
    },
    {
     "date": "2020-04-28",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 2.0,
-    "Range(I)": 2.0
+    "Upper(I)": 1.0,
+    "Range(I)": 1.0
    },
    {
     "date": "2020-04-29",
@@ -736,8 +736,8 @@
     "date": "2020-05-05",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 1.0,
-    "Range(I)": 1.0
+    "Upper(I)": 0.0,
+    "Range(I)": 0.0
    },
    {
     "date": "2020-05-06",
@@ -750,8 +750,8 @@
     "date": "2020-05-07",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 0.0,
-    "Range(I)": 0.0
+    "Upper(I)": 1.0,
+    "Range(I)": 1.0
    },
    {
     "date": "2020-05-08",
@@ -764,8 +764,8 @@
     "date": "2020-05-09",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 0.0,
-    "Range(I)": 0.0
+    "Upper(I)": 1.0,
+    "Range(I)": 1.0
    },
    {
     "date": "2020-05-10",
@@ -799,8 +799,8 @@
     "date": "2020-05-14",
     "Mean(I)": 0.0,
     "Lower(I)": 0.0,
-    "Upper(I)": 1.0,
-    "Range(I)": 1.0
+    "Upper(I)": 0.0,
+    "Range(I)": 0.0
    },
    {
     "date": "2020-05-15",
