@@ -42,158 +42,184 @@
    "date",
    "Mean(R)",
    "Lower(R)",
-   "Upper(R)"
+   "Upper(R)",
+   "Range(R)"
   ],
   "source": [
    {
     "date": "2020-01-20",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-21",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-22",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-23",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-24",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-25",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-26",
     "Mean(R)": null,
     "Lower(R)": null,
-    "Upper(R)": null
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-01-27",
     "Mean(R)": 0.82,
     "Lower(R)": 0.66,
-    "Upper(R)": 0.35
+    "Upper(R)": 1.0,
+    "Range(R)": 0.35
    },
    {
     "date": "2020-01-28",
     "Mean(R)": 0.71,
     "Lower(R)": 0.59,
-    "Upper(R)": 0.26
+    "Upper(R)": 0.85,
+    "Range(R)": 0.26
    },
    {
     "date": "2020-01-29",
     "Mean(R)": 0.63,
     "Lower(R)": 0.53,
-    "Upper(R)": 0.21
+    "Upper(R)": 0.74,
+    "Range(R)": 0.21
    },
    {
     "date": "2020-01-30",
     "Mean(R)": 0.63,
     "Lower(R)": 0.54,
-    "Upper(R)": 0.18
+    "Upper(R)": 0.72,
+    "Range(R)": 0.18
    },
    {
     "date": "2020-01-31",
     "Mean(R)": 0.58,
     "Lower(R)": 0.51,
-    "Upper(R)": 0.15
+    "Upper(R)": 0.66,
+    "Range(R)": 0.15
    },
    {
     "date": "2020-02-01",
     "Mean(R)": 0.53,
     "Lower(R)": 0.47,
-    "Upper(R)": 0.13
+    "Upper(R)": 0.6,
+    "Range(R)": 0.13
    },
    {
     "date": "2020-02-02",
     "Mean(R)": 0.49,
     "Lower(R)": 0.43,
-    "Upper(R)": 0.11
+    "Upper(R)": 0.55,
+    "Range(R)": 0.11
    },
    {
     "date": "2020-02-03",
     "Mean(R)": 0.54,
     "Lower(R)": 0.48,
-    "Upper(R)": 0.11
+    "Upper(R)": 0.6,
+    "Range(R)": 0.11
    },
    {
     "date": "2020-02-04",
     "Mean(R)": 0.55,
     "Lower(R)": 0.49,
-    "Upper(R)": 0.11
+    "Upper(R)": 0.6,
+    "Range(R)": 0.11
    },
    {
     "date": "2020-02-05",
     "Mean(R)": 0.54,
     "Lower(R)": 0.49,
-    "Upper(R)": 0.1
+    "Upper(R)": 0.59,
+    "Range(R)": 0.1
    },
    {
     "date": "2020-02-06",
     "Mean(R)": 0.51,
     "Lower(R)": 0.47,
-    "Upper(R)": 0.09
+    "Upper(R)": 0.56,
+    "Range(R)": 0.09
    },
    {
     "date": "2020-02-07",
     "Mean(R)": 0.49,
     "Lower(R)": 0.44,
-    "Upper(R)": 0.09
+    "Upper(R)": 0.53,
+    "Range(R)": 0.09
    },
    {
     "date": "2020-02-08",
     "Mean(R)": 0.49,
     "Lower(R)": 0.45,
-    "Upper(R)": 0.09
+    "Upper(R)": 0.53,
+    "Range(R)": 0.09
    },
    {
     "date": "2020-02-09",
     "Mean(R)": 0.47,
     "Lower(R)": 0.42,
-    "Upper(R)": 0.09
+    "Upper(R)": 0.51,
+    "Range(R)": 0.09
    },
    {
     "date": "2020-02-10",
     "Mean(R)": 0.42,
     "Lower(R)": 0.38,
-    "Upper(R)": 0.08
+    "Upper(R)": 0.46,
+    "Range(R)": 0.08
    },
    {
     "date": "2020-02-11",
     "Mean(R)": 0.38,
     "Lower(R)": 0.34,
-    "Upper(R)": 0.08
+    "Upper(R)": 0.42,
+    "Range(R)": 0.08
    },
    {
     "date": "2020-02-12",
     "Mean(R)": 0.34,
     "Lower(R)": 0.31,
-    "Upper(R)": 0.08
+    "Upper(R)": 0.38,
+    "Range(R)": 0.08
    },
    {
     "date": "2020-02-13",
     "Mean(R)": 0.3,
     "Lower(R)": 0.26,
-    "Upper(R)": 0.08
+    "Upper(R)": 0.34,
+    "Range(R)": 0.08
    }
   ]
  },
@@ -247,8 +273,9 @@
    },
    "encode": {
     "x": "date",
-    "y": "Upper(R)",
-    "seriesName": "Upper(R)"
+    "y": "Range(R)",
+    "seriesName": "Upper(R)",
+    "tooltip": "Upper(R)"
    }
   }
  ]
