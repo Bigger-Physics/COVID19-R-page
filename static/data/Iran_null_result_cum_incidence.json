@@ -300,206 +300,213 @@
    },
    {
     "date": "2020-03-30",
-    "Mean(I_cum)": 35862.0,
-    "Lower(I_cum)": 35814.0,
-    "Upper(I_cum)": 35911.0,
-    "Range(I_cum)": 96.0
+    "Mean(I_cum)": 38795.0,
+    "Lower(I_cum)": 38682.0,
+    "Upper(I_cum)": 38910.0,
+    "Range(I_cum)": 228.0
    },
    {
     "date": "2020-03-31",
-    "Mean(I_cum)": 36954.0,
-    "Lower(I_cum)": 36888.0,
-    "Upper(I_cum)": 37044.0,
-    "Range(I_cum)": 156.0
+    "Mean(I_cum)": 42625.0,
+    "Lower(I_cum)": 42457.0,
+    "Upper(I_cum)": 42789.0,
+    "Range(I_cum)": 333.0
    },
    {
     "date": "2020-04-01",
-    "Mean(I_cum)": 38150.0,
-    "Lower(I_cum)": 38033.0,
-    "Upper(I_cum)": 38286.0,
-    "Range(I_cum)": 254.0
+    "Mean(I_cum)": 46938.0,
+    "Lower(I_cum)": 46683.0,
+    "Upper(I_cum)": 47148.0,
+    "Range(I_cum)": 465.0
    },
    {
     "date": "2020-04-02",
-    "Mean(I_cum)": 39502.0,
-    "Lower(I_cum)": 39350.0,
-    "Upper(I_cum)": 39712.0,
-    "Range(I_cum)": 361.0
+    "Mean(I_cum)": 51775.0,
+    "Lower(I_cum)": 51428.0,
+    "Upper(I_cum)": 52073.0,
+    "Range(I_cum)": 644.0
    },
    {
     "date": "2020-04-03",
-    "Mean(I_cum)": 41031.0,
-    "Lower(I_cum)": 40836.0,
-    "Upper(I_cum)": 41273.0,
-    "Range(I_cum)": 437.0
+    "Mean(I_cum)": 57201.0,
+    "Lower(I_cum)": 56802.0,
+    "Upper(I_cum)": 57570.0,
+    "Range(I_cum)": 768.0
    },
    {
     "date": "2020-04-04",
-    "Mean(I_cum)": 42752.0,
-    "Lower(I_cum)": 42469.0,
-    "Upper(I_cum)": 43067.0,
-    "Range(I_cum)": 597.0
+    "Mean(I_cum)": 63294.0,
+    "Lower(I_cum)": 62765.0,
+    "Upper(I_cum)": 63794.0,
+    "Range(I_cum)": 1029.0
    },
    {
     "date": "2020-04-05",
-    "Mean(I_cum)": 44675.0,
-    "Lower(I_cum)": 44322.0,
-    "Upper(I_cum)": 45052.0,
-    "Range(I_cum)": 730.0
+    "Mean(I_cum)": 70146.0,
+    "Lower(I_cum)": 69534.0,
+    "Upper(I_cum)": 70756.0,
+    "Range(I_cum)": 1221.0
    },
    {
     "date": "2020-04-06",
-    "Mean(I_cum)": 46833.0,
-    "Lower(I_cum)": 46411.0,
-    "Upper(I_cum)": 47268.0,
-    "Range(I_cum)": 857.0
+    "Mean(I_cum)": 77828.0,
+    "Lower(I_cum)": 77015.0,
+    "Upper(I_cum)": 78605.0,
+    "Range(I_cum)": 1590.0
    },
    {
     "date": "2020-04-07",
-    "Mean(I_cum)": 49269.0,
-    "Lower(I_cum)": 48748.0,
-    "Upper(I_cum)": 49762.0,
-    "Range(I_cum)": 1013.0
+    "Mean(I_cum)": 86455.0,
+    "Lower(I_cum)": 85401.0,
+    "Upper(I_cum)": 87357.0,
+    "Range(I_cum)": 1955.0
    },
    {
     "date": "2020-04-08",
-    "Mean(I_cum)": 51995.0,
-    "Lower(I_cum)": 51348.0,
-    "Upper(I_cum)": 52625.0,
-    "Range(I_cum)": 1277.0
+    "Mean(I_cum)": 96130.0,
+    "Lower(I_cum)": 94959.0,
+    "Upper(I_cum)": 97235.0,
+    "Range(I_cum)": 2277.0
    },
    {
     "date": "2020-04-09",
-    "Mean(I_cum)": 55048.0,
-    "Lower(I_cum)": 54208.0,
-    "Upper(I_cum)": 55790.0,
-    "Range(I_cum)": 1582.0
+    "Mean(I_cum)": 106993.0,
+    "Lower(I_cum)": 105564.0,
+    "Upper(I_cum)": 108381.0,
+    "Range(I_cum)": 2817.0
    },
    {
     "date": "2020-04-10",
-    "Mean(I_cum)": 58492.0,
-    "Lower(I_cum)": 57486.0,
-    "Upper(I_cum)": 59412.0,
-    "Range(I_cum)": 1925.0
+    "Mean(I_cum)": 119188.0,
+    "Lower(I_cum)": 117426.0,
+    "Upper(I_cum)": 120754.0,
+    "Range(I_cum)": 3329.0
    },
    {
     "date": "2020-04-11",
-    "Mean(I_cum)": 62355.0,
-    "Lower(I_cum)": 61189.0,
-    "Upper(I_cum)": 63453.0,
-    "Range(I_cum)": 2264.0
+    "Mean(I_cum)": 132868.0,
+    "Lower(I_cum)": 130915.0,
+    "Upper(I_cum)": 134783.0,
+    "Range(I_cum)": 3867.0
    },
    {
     "date": "2020-04-12",
-    "Mean(I_cum)": 66685.0,
-    "Lower(I_cum)": 65284.0,
-    "Upper(I_cum)": 67962.0,
-    "Range(I_cum)": 2679.0
+    "Mean(I_cum)": 148212.0,
+    "Lower(I_cum)": 145954.0,
+    "Upper(I_cum)": 150460.0,
+    "Range(I_cum)": 4506.0
    },
    {
     "date": "2020-04-13",
-    "Mean(I_cum)": 71547.0,
-    "Lower(I_cum)": 69937.0,
-    "Upper(I_cum)": 73059.0,
-    "Range(I_cum)": 3122.0
+    "Mean(I_cum)": 165448.0,
+    "Lower(I_cum)": 163019.0,
+    "Upper(I_cum)": 168047.0,
+    "Range(I_cum)": 5028.0
    },
    {
     "date": "2020-04-14",
-    "Mean(I_cum)": 77012.0,
-    "Lower(I_cum)": 75157.0,
-    "Upper(I_cum)": 78697.0,
-    "Range(I_cum)": 3540.0
+    "Mean(I_cum)": 184803.0,
+    "Lower(I_cum)": 181861.0,
+    "Upper(I_cum)": 187738.0,
+    "Range(I_cum)": 5877.0
    },
    {
     "date": "2020-04-15",
-    "Mean(I_cum)": 83131.0,
-    "Lower(I_cum)": 80938.0,
-    "Upper(I_cum)": 85099.0,
-    "Range(I_cum)": 4161.0
+    "Mean(I_cum)": 206531.0,
+    "Lower(I_cum)": 203131.0,
+    "Upper(I_cum)": 210053.0,
+    "Range(I_cum)": 6922.0
    },
    {
     "date": "2020-04-16",
-    "Mean(I_cum)": 90006.0,
-    "Lower(I_cum)": 87475.0,
-    "Upper(I_cum)": 92199.0,
-    "Range(I_cum)": 4724.0
+    "Mean(I_cum)": 230912.0,
+    "Lower(I_cum)": 226961.0,
+    "Upper(I_cum)": 234859.0,
+    "Range(I_cum)": 7898.0
    },
    {
     "date": "2020-04-17",
-    "Mean(I_cum)": 97724.0,
-    "Lower(I_cum)": 94758.0,
-    "Upper(I_cum)": 100253.0,
-    "Range(I_cum)": 5494.0
+    "Mean(I_cum)": 258305.0,
+    "Lower(I_cum)": 253669.0,
+    "Upper(I_cum)": 263012.0,
+    "Range(I_cum)": 9343.0
    },
    {
     "date": "2020-04-18",
-    "Mean(I_cum)": 106379.0,
-    "Lower(I_cum)": 103003.0,
-    "Upper(I_cum)": 109230.0,
-    "Range(I_cum)": 6227.0
+    "Mean(I_cum)": 289042.0,
+    "Lower(I_cum)": 283848.0,
+    "Upper(I_cum)": 294506.0,
+    "Range(I_cum)": 10658.0
    },
    {
     "date": "2020-04-19",
-    "Mean(I_cum)": 116094.0,
-    "Lower(I_cum)": 112233.0,
-    "Upper(I_cum)": 119393.0,
-    "Range(I_cum)": 7160.0
+    "Mean(I_cum)": 323523.0,
+    "Lower(I_cum)": 317396.0,
+    "Upper(I_cum)": 329938.0,
+    "Range(I_cum)": 12542.0
    },
    {
     "date": "2020-04-20",
-    "Mean(I_cum)": 127010.0,
-    "Lower(I_cum)": 122574.0,
-    "Upper(I_cum)": 130793.0,
-    "Range(I_cum)": 8218.0
+    "Mean(I_cum)": 362269.0,
+    "Lower(I_cum)": 355324.0,
+    "Upper(I_cum)": 369472.0,
+    "Range(I_cum)": 14148.0
    },
    {
     "date": "2020-04-21",
-    "Mean(I_cum)": 139254.0,
-    "Lower(I_cum)": 134200.0,
-    "Upper(I_cum)": 143715.0,
-    "Range(I_cum)": 9514.0
+    "Mean(I_cum)": 405749.0,
+    "Lower(I_cum)": 397882.0,
+    "Upper(I_cum)": 413880.0,
+    "Range(I_cum)": 15998.0
    },
    {
     "date": "2020-04-22",
-    "Mean(I_cum)": 153021.0,
-    "Lower(I_cum)": 147362.0,
-    "Upper(I_cum)": 158119.0,
-    "Range(I_cum)": 10757.0
+    "Mean(I_cum)": 454580.0,
+    "Lower(I_cum)": 445467.0,
+    "Upper(I_cum)": 463713.0,
+    "Range(I_cum)": 18246.0
    },
    {
     "date": "2020-04-23",
-    "Mean(I_cum)": 168454.0,
-    "Lower(I_cum)": 162150.0,
-    "Upper(I_cum)": 174333.0,
-    "Range(I_cum)": 12182.0
+    "Mean(I_cum)": 509351.0,
+    "Lower(I_cum)": 499243.0,
+    "Upper(I_cum)": 519515.0,
+    "Range(I_cum)": 20272.0
    },
    {
     "date": "2020-04-24",
-    "Mean(I_cum)": 185808.0,
-    "Lower(I_cum)": 178595.0,
-    "Upper(I_cum)": 192556.0,
-    "Range(I_cum)": 13960.0
+    "Mean(I_cum)": 570864.0,
+    "Lower(I_cum)": 559333.0,
+    "Upper(I_cum)": 582435.0,
+    "Range(I_cum)": 23101.0
    },
    {
     "date": "2020-04-25",
-    "Mean(I_cum)": 205287.0,
-    "Lower(I_cum)": 197070.0,
-    "Upper(I_cum)": 212918.0,
-    "Range(I_cum)": 15848.0
+    "Mean(I_cum)": 639931.0,
+    "Lower(I_cum)": 626618.0,
+    "Upper(I_cum)": 653325.0,
+    "Range(I_cum)": 26708.0
    },
    {
     "date": "2020-04-26",
-    "Mean(I_cum)": 227153.0,
-    "Lower(I_cum)": 217745.0,
-    "Upper(I_cum)": 235909.0,
-    "Range(I_cum)": 18164.0
+    "Mean(I_cum)": 717489.0,
+    "Lower(I_cum)": 702237.0,
+    "Upper(I_cum)": 732582.0,
+    "Range(I_cum)": 30345.0
    },
    {
     "date": "2020-04-27",
-    "Mean(I_cum)": 251667.0,
-    "Lower(I_cum)": 240980.0,
-    "Upper(I_cum)": 261602.0,
-    "Range(I_cum)": 20622.0
+    "Mean(I_cum)": 804505.0,
+    "Lower(I_cum)": 787211.0,
+    "Upper(I_cum)": 821631.0,
+    "Range(I_cum)": 34421.0
+   },
+   {
+    "date": "2020-04-28",
+    "Mean(I_cum)": 902251.0,
+    "Lower(I_cum)": 882402.0,
+    "Upper(I_cum)": 921801.0,
+    "Range(I_cum)": 39399.0
    }
   ]
  },
