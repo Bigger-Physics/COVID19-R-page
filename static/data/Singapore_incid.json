@@ -373,6 +373,41 @@
     "dates": "2020-03-30",
     "imported": 9,
     "local": 26
+   },
+   {
+    "dates": "2020-03-31",
+    "imported": 16,
+    "local": 31
+   },
+   {
+    "dates": "2020-04-01",
+    "imported": 20,
+    "local": 54
+   },
+   {
+    "dates": "2020-04-02",
+    "imported": 8,
+    "local": 41
+   },
+   {
+    "dates": "2020-04-03",
+    "imported": 9,
+    "local": 56
+   },
+   {
+    "dates": "2020-04-04",
+    "imported": 6,
+    "local": 69
+   },
+   {
+    "dates": "2020-04-05",
+    "imported": 4,
+    "local": 116
+   },
+   {
+    "dates": "2020-04-06",
+    "imported": 1,
+    "local": 65
    }
   ]
  },
