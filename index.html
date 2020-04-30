@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID-19 Time-Varying Reproduction Numbers on Global</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class='title' style='text-align: center;'>COVID-19 Time-Varying Reproduction Numbers on Global</h3>
+        <!-- <p style='text-align: center;'>BNU Satety and Systems Science Team (last updated on 2020/4/29)</p> -->
+        <div class="row">
+            <div class="col">
+                <div id="chart_container" style="height: 560px"></div>
+            </div>
+          </div>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+        $.get('./data/world_geo.json', function (worldGeoJson) {
+            echarts.registerMap('world', worldGeoJson);
+            var chart = echarts.init(document.getElementById('chart_container'));
+            option = {
+                baseOption: {
+                    timeline: {
+                        data: [],
+                        axisType: 'category',
+                        autoPlay: true,
+                        loop: false,
+                        playInterval: 1000,
+                        label: {
+                            color: '#999'
+                        },
+                        symbol: 'none',
+                        lineStyle: {
+                            color: '#555'
+                        },
+                        checkpointStyle: {
+                            color: '#bbb',
+                            borderColor: '#777',
+                            borderWidth: 2
+                        },
+                        controlStyle: {
+                            showNextBtn: false,
+                            showPrevBtn: false,
+                            color: '#666',
+                            borderColor: '#666'
+                        },
+                        emphasis: {
+                            label: {
+                                color: '#fff'
+                            },
+                            controlStyle: {
+                                color: '#aaa',
+                                borderColor: '#aaa'
+                            }
+                        }
+                    },
+                    title: {
+                        text: "",
+                        textAlign: 'center',
+                        left: '50%',
+                        top: '80%',
+                        textStyle: {
+                            fontSize: 36,
+                            color: 'rgba(255, 0, 0, 0.3)'
+                        }
+                    },
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    toolbox: {
+                        show: true,
+                        orient: 'vertical',
+                        left: '5%',
+                        top: 'center',
+                        feature: {
+                            restore: {},
+                            saveAsImage: {}
+                        }
+                    },
+                    visualMap: {
+                        min: 0,
+                        max: 5,
+                        text: ['High', 'Low'],
+                        realtime: true,
+                        calculable: true,
+                        inRange: {
+                            color: ['lightskyblue', 'yellow', 'orangered']
+                        },
+                        right: '5%',
+                        top: 'center',
+                    },
+                    series: [{
+                        name: 'Reproduction Number',
+                        type: 'map',
+                        map: 'world',
+                        roam: true,
+                        data: []
+                    }]
+                },
+                options: []
+            };
+
+            $.get('./data/world_R.json', function (worldRJson) {
+                for (var i = 0; i < worldRJson.dates.length; i++) {
+                    option.baseOption.timeline.data.push(worldRJson.dates[i]);
+                    option.options.push(
+                        {
+                            title: {
+                                text: worldRJson.dates[i]
+                            },
+                            series: [{
+                                name: 'Reproduction Number',
+                                type: 'map',
+                                map: 'world',
+                                roam: true,
+                                data: worldRJson.data[i]
+                            }]
+                        },
+                    );
+                }
+                chart.setOption(option);
+                chart.on('click', function (params) {
+                    if (params.data) {
+                         window.open('./region.html?country=' + params.data.name);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

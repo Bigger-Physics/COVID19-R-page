@@ -1,0 +1,548 @@
+{
+ "color": [
+  "#5DA5DA",
+  "#FAA43A"
+ ],
+ "title": {
+  "text": "Epidemic curve"
+ },
+ "legend": {
+  "top": "10%"
+ },
+ "tooltip": {
+  "trigger": "axis"
+ },
+ "dataZoom": [
+  {
+   "type": "slider",
+   "show": true,
+   "xAxisIndex": [
+    0
+   ],
+   "start": 50,
+   "end": 100
+  },
+  {
+   "type": "inside",
+   "xAxisIndex": [
+    0
+   ],
+   "start": 50,
+   "end": 100
+  },
+  {
+   "type": "inside",
+   "yAxisIndex": [
+    0
+   ]
+  }
+ ],
+ "dataset": {
+  "dimensions": [
+   "dates",
+   "imported",
+   "local"
+  ],
+  "source": [
+   {
+    "dates": "2020-01-25",
+    "imported": 2,
+    "local": 0
+   },
+   {
+    "dates": "2020-01-26",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-01-27",
+    "imported": 0,
+    "local": 2
+   },
+   {
+    "dates": "2020-01-28",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-01-29",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-01-30",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-01-31",
+    "imported": 0,
+    "local": 7
+   },
+   {
+    "dates": "2020-02-01",
+    "imported": 0,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-02",
+    "imported": 0,
+    "local": 3
+   },
+   {
+    "dates": "2020-02-03",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-04",
+    "imported": 0,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-05",
+    "imported": 0,
+    "local": 2
+   },
+   {
+    "dates": "2020-02-06",
+    "imported": 1,
+    "local": 4
+   },
+   {
+    "dates": "2020-02-07",
+    "imported": 1,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-08",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-09",
+    "imported": 2,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-10",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-11",
+    "imported": 0,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-12",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-13",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-14",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-15",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-02-16",
+    "imported": 0,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-17",
+    "imported": 0,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-18",
+    "imported": 0,
+    "local": 1
+   },
+   {
+    "dates": "2020-02-19",
+    "imported": 0,
+    "local": 20
+   },
+   {
+    "dates": "2020-02-20",
+    "imported": 0,
+    "local": 53
+   },
+   {
+    "dates": "2020-02-21",
+    "imported": 0,
+    "local": 100
+   },
+   {
+    "dates": "2020-02-22",
+    "imported": 0,
+    "local": 142
+   },
+   {
+    "dates": "2020-02-23",
+    "imported": 0,
+    "local": 256
+   },
+   {
+    "dates": "2020-02-24",
+    "imported": 0,
+    "local": 161
+   },
+   {
+    "dates": "2020-02-25",
+    "imported": 0,
+    "local": 214
+   },
+   {
+    "dates": "2020-02-26",
+    "imported": 0,
+    "local": 284
+   },
+   {
+    "dates": "2020-02-27",
+    "imported": 0,
+    "local": 505
+   },
+   {
+    "dates": "2020-02-28",
+    "imported": 0,
+    "local": 571
+   },
+   {
+    "dates": "2020-02-29",
+    "imported": 0,
+    "local": 813
+   },
+   {
+    "dates": "2020-03-01",
+    "imported": 0,
+    "local": 586
+   },
+   {
+    "dates": "2020-03-02",
+    "imported": 0,
+    "local": 476
+   },
+   {
+    "dates": "2020-03-03",
+    "imported": 0,
+    "local": 600
+   },
+   {
+    "dates": "2020-03-04",
+    "imported": 0,
+    "local": 516
+   },
+   {
+    "dates": "2020-03-05",
+    "imported": 0,
+    "local": 438
+   },
+   {
+    "dates": "2020-03-06",
+    "imported": 0,
+    "local": 518
+   },
+   {
+    "dates": "2020-03-07",
+    "imported": 0,
+    "local": 483
+   },
+   {
+    "dates": "2020-03-08",
+    "imported": 0,
+    "local": 367
+   },
+   {
+    "dates": "2020-03-09",
+    "imported": 0,
+    "local": 248
+   },
+   {
+    "dates": "2020-03-10",
+    "imported": 0,
+    "local": 131
+   },
+   {
+    "dates": "2020-03-11",
+    "imported": 0,
+    "local": 242
+   },
+   {
+    "dates": "2020-03-12",
+    "imported": 0,
+    "local": 114
+   },
+   {
+    "dates": "2020-03-13",
+    "imported": 0,
+    "local": 110
+   },
+   {
+    "dates": "2020-03-14",
+    "imported": 0,
+    "local": 107
+   },
+   {
+    "dates": "2020-03-15",
+    "imported": 0,
+    "local": 76
+   },
+   {
+    "dates": "2020-03-16",
+    "imported": 0,
+    "local": 74
+   },
+   {
+    "dates": "2020-03-17",
+    "imported": 0,
+    "local": 84
+   },
+   {
+    "dates": "2020-03-18",
+    "imported": 0,
+    "local": 84
+   },
+   {
+    "dates": "2020-03-19",
+    "imported": 0,
+    "local": 93
+   },
+   {
+    "dates": "2020-03-20",
+    "imported": 0,
+    "local": 239
+   },
+   {
+    "dates": "2020-03-21",
+    "imported": 0,
+    "local": 147
+   },
+   {
+    "dates": "2020-03-22",
+    "imported": 0,
+    "local": 98
+   },
+   {
+    "dates": "2020-03-23",
+    "imported": 0,
+    "local": 64
+   },
+   {
+    "dates": "2020-03-24",
+    "imported": 0,
+    "local": 76
+   },
+   {
+    "dates": "2020-03-25",
+    "imported": 0,
+    "local": 100
+   },
+   {
+    "dates": "2020-03-26",
+    "imported": 0,
+    "local": 104
+   },
+   {
+    "dates": "2020-03-27",
+    "imported": 0,
+    "local": 91
+   },
+   {
+    "dates": "2020-03-28",
+    "imported": 0,
+    "local": 146
+   },
+   {
+    "dates": "2020-03-29",
+    "imported": 0,
+    "local": 105
+   },
+   {
+    "dates": "2020-03-30",
+    "imported": 0,
+    "local": 78
+   },
+   {
+    "dates": "2020-03-31",
+    "imported": 0,
+    "local": 125
+   },
+   {
+    "dates": "2020-04-01",
+    "imported": 0,
+    "local": 101
+   },
+   {
+    "dates": "2020-04-02",
+    "imported": 0,
+    "local": 89
+   },
+   {
+    "dates": "2020-04-03",
+    "imported": 0,
+    "local": 86
+   },
+   {
+    "dates": "2020-04-04",
+    "imported": 0,
+    "local": 94
+   },
+   {
+    "dates": "2020-04-05",
+    "imported": 0,
+    "local": 81
+   },
+   {
+    "dates": "2020-04-06",
+    "imported": 0,
+    "local": 47
+   },
+   {
+    "dates": "2020-04-07",
+    "imported": 0,
+    "local": 47
+   },
+   {
+    "dates": "2020-04-08",
+    "imported": 0,
+    "local": 53
+   },
+   {
+    "dates": "2020-04-09",
+    "imported": 0,
+    "local": 39
+   },
+   {
+    "dates": "2020-04-10",
+    "imported": 0,
+    "local": 27
+   },
+   {
+    "dates": "2020-04-11",
+    "imported": 0,
+    "local": 30
+   },
+   {
+    "dates": "2020-04-12",
+    "imported": 0,
+    "local": 32
+   },
+   {
+    "dates": "2020-04-13",
+    "imported": 0,
+    "local": 25
+   },
+   {
+    "dates": "2020-04-14",
+    "imported": 0,
+    "local": 27
+   },
+   {
+    "dates": "2020-04-15",
+    "imported": 0,
+    "local": 27
+   },
+   {
+    "dates": "2020-04-16",
+    "imported": 0,
+    "local": 22
+   },
+   {
+    "dates": "2020-04-17",
+    "imported": 0,
+    "local": 22
+   },
+   {
+    "dates": "2020-04-18",
+    "imported": 0,
+    "local": 18
+   },
+   {
+    "dates": "2020-04-19",
+    "imported": 0,
+    "local": 8
+   },
+   {
+    "dates": "2020-04-20",
+    "imported": 0,
+    "local": 13
+   },
+   {
+    "dates": "2020-04-21",
+    "imported": 0,
+    "local": 9
+   },
+   {
+    "dates": "2020-04-22",
+    "imported": 0,
+    "local": 11
+   },
+   {
+    "dates": "2020-04-23",
+    "imported": 0,
+    "local": 8
+   },
+   {
+    "dates": "2020-04-24",
+    "imported": 0,
+    "local": 6
+   },
+   {
+    "dates": "2020-04-25",
+    "imported": 0,
+    "local": 10
+   },
+   {
+    "dates": "2020-04-26",
+    "imported": 0,
+    "local": 10
+   },
+   {
+    "dates": "2020-04-27",
+    "imported": 0,
+    "local": 10
+   }
+  ]
+ },
+ "xAxis": {
+  "type": "time"
+ },
+ "yAxis": {
+  "name": "Incidence",
+  "nameTextStyle": {
+   "fontWeight": "bold"
+  }
+ },
+ "series": [
+  {
+   "type": "bar",
+   "stack": 1,
+   "encode": {
+    "x": "dates",
+    "y": "imported",
+    "seriesName": "imported"
+   }
+  },
+  {
+   "type": "bar",
+   "stack": 1,
+   "encode": {
+    "x": "dates",
+    "y": "local",
+    "seriesName": "local"
+   }
+  }
+ ]
+}
