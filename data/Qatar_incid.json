@@ -1,0 +1,328 @@
+{
+ "color": [
+  "#5DA5DA",
+  "#FAA43A"
+ ],
+ "title": {
+  "text": "Epidemic curve"
+ },
+ "legend": {
+  "top": "10%"
+ },
+ "tooltip": {
+  "trigger": "axis"
+ },
+ "dataZoom": [
+  {
+   "type": "slider",
+   "show": true,
+   "xAxisIndex": [
+    0
+   ],
+   "start": 50,
+   "end": 100
+  },
+  {
+   "type": "inside",
+   "xAxisIndex": [
+    0
+   ],
+   "start": 50,
+   "end": 100
+  },
+  {
+   "type": "inside",
+   "yAxisIndex": [
+    0
+   ]
+  }
+ ],
+ "dataset": {
+  "dimensions": [
+   "dates",
+   "imported",
+   "local"
+  ],
+  "source": [
+   {
+    "dates": "2020-03-11",
+    "imported": 6,
+    "local": 0
+   },
+   {
+    "dates": "2020-03-12",
+    "imported": 0,
+    "local": 238
+   },
+   {
+    "dates": "2020-03-13",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-03-15",
+    "imported": 0,
+    "local": 75
+   },
+   {
+    "dates": "2020-03-16",
+    "imported": 0,
+    "local": 64
+   },
+   {
+    "dates": "2020-03-17",
+    "imported": 0,
+    "local": 38
+   },
+   {
+    "dates": "2020-03-18",
+    "imported": 0,
+    "local": 41
+   },
+   {
+    "dates": "2020-03-19",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-03-20",
+    "imported": 0,
+    "local": 10
+   },
+   {
+    "dates": "2020-03-21",
+    "imported": 0,
+    "local": 8
+   },
+   {
+    "dates": "2020-03-22",
+    "imported": 0,
+    "local": 10
+   },
+   {
+    "dates": "2020-03-23",
+    "imported": 0,
+    "local": 24
+   },
+   {
+    "dates": "2020-03-24",
+    "imported": 0,
+    "local": 7
+   },
+   {
+    "dates": "2020-03-25",
+    "imported": 0,
+    "local": 25
+   },
+   {
+    "dates": "2020-03-26",
+    "imported": 0,
+    "local": 11
+   },
+   {
+    "dates": "2020-03-27",
+    "imported": 0,
+    "local": 12
+   },
+   {
+    "dates": "2020-03-28",
+    "imported": 0,
+    "local": 13
+   },
+   {
+    "dates": "2020-03-29",
+    "imported": 0,
+    "local": 28
+   },
+   {
+    "dates": "2020-03-30",
+    "imported": 0,
+    "local": 44
+   },
+   {
+    "dates": "2020-03-31",
+    "imported": 0,
+    "local": 59
+   },
+   {
+    "dates": "2020-04-01",
+    "imported": 0,
+    "local": 88
+   },
+   {
+    "dates": "2020-04-02",
+    "imported": 0,
+    "local": 54
+   },
+   {
+    "dates": "2020-04-03",
+    "imported": 0,
+    "local": 114
+   },
+   {
+    "dates": "2020-04-04",
+    "imported": 0,
+    "local": 126
+   },
+   {
+    "dates": "2020-04-05",
+    "imported": 0,
+    "local": 250
+   },
+   {
+    "dates": "2020-04-06",
+    "imported": 0,
+    "local": 279
+   },
+   {
+    "dates": "2020-04-07",
+    "imported": 0,
+    "local": 228
+   },
+   {
+    "dates": "2020-04-08",
+    "imported": 0,
+    "local": 225
+   },
+   {
+    "dates": "2020-04-09",
+    "imported": 0,
+    "local": 153
+   },
+   {
+    "dates": "2020-04-10",
+    "imported": 0,
+    "local": 166
+   },
+   {
+    "dates": "2020-04-11",
+    "imported": 0,
+    "local": 136
+   },
+   {
+    "dates": "2020-04-12",
+    "imported": 0,
+    "local": 216
+   },
+   {
+    "dates": "2020-04-13",
+    "imported": 0,
+    "local": 251
+   },
+   {
+    "dates": "2020-04-14",
+    "imported": 0,
+    "local": 252
+   },
+   {
+    "dates": "2020-04-15",
+    "imported": 0,
+    "local": 197
+   },
+   {
+    "dates": "2020-04-16",
+    "imported": 0,
+    "local": 283
+   },
+   {
+    "dates": "2020-04-17",
+    "imported": 0,
+    "local": 392
+   },
+   {
+    "dates": "2020-04-18",
+    "imported": 0,
+    "local": 560
+   },
+   {
+    "dates": "2020-04-19",
+    "imported": 0,
+    "local": 345
+   },
+   {
+    "dates": "2020-04-20",
+    "imported": 0,
+    "local": 440
+   },
+   {
+    "dates": "2020-04-21",
+    "imported": 0,
+    "local": 567
+   },
+   {
+    "dates": "2020-04-22",
+    "imported": 0,
+    "local": 518
+   },
+   {
+    "dates": "2020-04-23",
+    "imported": 0,
+    "local": 608
+   },
+   {
+    "dates": "2020-04-24",
+    "imported": 0,
+    "local": 623
+   },
+   {
+    "dates": "2020-04-25",
+    "imported": 0,
+    "local": 761
+   },
+   {
+    "dates": "2020-04-26",
+    "imported": 0,
+    "local": 833
+   },
+   {
+    "dates": "2020-04-27",
+    "imported": 0,
+    "local": 929
+   },
+   {
+    "dates": "2020-04-28",
+    "imported": 0,
+    "local": 957
+   },
+   {
+    "dates": "2020-04-29",
+    "imported": 0,
+    "local": 677
+   },
+   {
+    "dates": "2020-04-30",
+    "imported": 0,
+    "local": 643
+   }
+  ]
+ },
+ "xAxis": {
+  "type": "time"
+ },
+ "yAxis": {
+  "name": "Incidence",
+  "nameTextStyle": {
+   "fontWeight": "bold"
+  }
+ },
+ "series": [
+  {
+   "type": "bar",
+   "stack": 1,
+   "encode": {
+    "x": "dates",
+    "y": "imported",
+    "seriesName": "imported"
+   }
+  },
+  {
+   "type": "bar",
+   "stack": 1,
+   "encode": {
+    "x": "dates",
+    "y": "local",
+    "seriesName": "local"
+   }
+  }
+ ]
+}
