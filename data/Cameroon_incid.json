@@ -45,84 +45,9 @@
   ],
   "source": [
    {
-    "dates": "2020-03-06",
-    "imported": 1,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-07",
-    "imported": 0,
-    "local": 1
-   },
-   {
-    "dates": "2020-03-08",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-09",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-10",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-11",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-12",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-13",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-14",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-15",
-    "imported": 0,
-    "local": 1
-   },
-   {
-    "dates": "2020-03-16",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-17",
-    "imported": 0,
-    "local": 2
-   },
-   {
-    "dates": "2020-03-18",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-19",
-    "imported": 0,
-    "local": 5
-   },
-   {
-    "dates": "2020-03-20",
-    "imported": 0,
-    "local": 5
-   },
-   {
     "dates": "2020-03-21",
-    "imported": 0,
-    "local": 7
+    "imported": 7,
+    "local": 0
    },
    {
     "dates": "2020-03-22",

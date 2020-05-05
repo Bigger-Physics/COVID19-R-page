@@ -45,24 +45,9 @@
   ],
   "source": [
    {
-    "dates": "2020-02-20",
-    "imported": 2,
-    "local": 0
-   },
-   {
-    "dates": "2020-02-21",
-    "imported": 0,
-    "local": 3
-   },
-   {
-    "dates": "2020-02-22",
-    "imported": 0,
-    "local": 13
-   },
-   {
     "dates": "2020-02-23",
-    "imported": 0,
-    "local": 10
+    "imported": 10,
+    "local": 0
    },
    {
     "dates": "2020-02-24",

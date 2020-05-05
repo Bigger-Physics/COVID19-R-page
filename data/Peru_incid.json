@@ -45,44 +45,9 @@
   ],
   "source": [
    {
-    "dates": "2020-03-07",
-    "imported": 1,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-08",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-09",
-    "imported": 0,
-    "local": 0
-   },
-   {
-    "dates": "2020-03-10",
-    "imported": 0,
-    "local": 3
-   },
-   {
-    "dates": "2020-03-11",
-    "imported": 0,
-    "local": 2
-   },
-   {
-    "dates": "2020-03-12",
-    "imported": 0,
-    "local": 6
-   },
-   {
-    "dates": "2020-03-13",
-    "imported": 0,
-    "local": 5
-   },
-   {
     "dates": "2020-03-14",
-    "imported": 0,
-    "local": 6
+    "imported": 6,
+    "local": 0
    },
    {
     "dates": "2020-03-15",

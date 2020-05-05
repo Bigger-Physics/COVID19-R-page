@@ -51,27 +51,6 @@
   ],
   "source": [
    {
-    "date": "2020-02-20",
-    "Mean(R)": null,
-    "Lower(R)": null,
-    "Upper(R)": null,
-    "Range(R)": null
-   },
-   {
-    "date": "2020-02-21",
-    "Mean(R)": null,
-    "Lower(R)": null,
-    "Upper(R)": null,
-    "Range(R)": null
-   },
-   {
-    "date": "2020-02-22",
-    "Mean(R)": null,
-    "Lower(R)": null,
-    "Upper(R)": null,
-    "Range(R)": null
-   },
-   {
     "date": "2020-02-23",
     "Mean(R)": null,
     "Lower(R)": null,
@@ -101,58 +80,58 @@
    },
    {
     "date": "2020-02-27",
-    "Mean(R)": 3.87,
-    "Lower(R)": 3.26,
-    "Upper(R)": 4.54,
-    "Range(R)": 1.28
+    "Mean(R)": null,
+    "Lower(R)": null,
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-02-28",
-    "Mean(R)": 4.37,
-    "Lower(R)": 3.84,
-    "Upper(R)": 4.94,
-    "Range(R)": 1.1
+    "Mean(R)": null,
+    "Lower(R)": null,
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-02-29",
-    "Mean(R)": 4.32,
-    "Lower(R)": 3.89,
-    "Upper(R)": 4.77,
-    "Range(R)": 0.88
+    "Mean(R)": null,
+    "Lower(R)": null,
+    "Upper(R)": null,
+    "Range(R)": null
    },
    {
     "date": "2020-03-01",
-    "Mean(R)": 4.15,
-    "Lower(R)": 3.81,
-    "Upper(R)": 4.5,
-    "Range(R)": 0.68
+    "Mean(R)": 4.6,
+    "Lower(R)": 4.23,
+    "Upper(R)": 4.98,
+    "Range(R)": 0.76
    },
    {
     "date": "2020-03-02",
-    "Mean(R)": 4.39,
-    "Lower(R)": 4.11,
-    "Upper(R)": 4.67,
-    "Range(R)": 0.56
+    "Mean(R)": 4.61,
+    "Lower(R)": 4.32,
+    "Upper(R)": 4.91,
+    "Range(R)": 0.59
    },
    {
     "date": "2020-03-03",
-    "Mean(R)": 4.28,
-    "Lower(R)": 4.06,
-    "Upper(R)": 4.5,
-    "Range(R)": 0.44
+    "Mean(R)": 4.38,
+    "Lower(R)": 4.16,
+    "Upper(R)": 4.61,
+    "Range(R)": 0.45
    },
    {
     "date": "2020-03-04",
-    "Mean(R)": 4.2,
-    "Lower(R)": 4.03,
-    "Upper(R)": 4.38,
+    "Mean(R)": 4.25,
+    "Lower(R)": 4.07,
+    "Upper(R)": 4.42,
     "Range(R)": 0.35
    },
    {
     "date": "2020-03-05",
-    "Mean(R)": 3.33,
-    "Lower(R)": 3.2,
-    "Upper(R)": 3.45,
+    "Mean(R)": 3.34,
+    "Lower(R)": 3.22,
+    "Upper(R)": 3.47,
     "Range(R)": 0.25
    },
    {
@@ -165,7 +144,7 @@
    {
     "date": "2020-03-07",
     "Mean(R)": 2.59,
-    "Lower(R)": 2.51,
+    "Lower(R)": 2.52,
     "Upper(R)": 2.67,
     "Range(R)": 0.15
    },
@@ -227,7 +206,7 @@
    },
    {
     "date": "2020-03-16",
-    "Mean(R)": 1.42,
+    "Mean(R)": 1.43,
     "Lower(R)": 1.39,
     "Upper(R)": 1.46,
     "Range(R)": 0.06
