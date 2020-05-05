@@ -89,9 +89,18 @@
                         }
                     },
                     visualMap: {
-                        min: 0,
-                        max: 5,
-                        text: ['High', 'Low'],
+                        type: "piecewise",
+                        splitNumber: 5,
+                        pieces: [
+                            {min: 4}, // 不指定 max，表示 max 为无限大（Infinity）。
+                            {min: 3.0, max: 4.0},
+                            {min: 2.0, max: 3.0},
+                            {min: 1.0, max: 2.0},
+                            {min: 0, max: 1.0}
+                        ],
+                        // min: 0,
+                        // max: 5,
+                        // text: ['High', 'Low'],
                         realtime: true,
                         calculable: true,
                         inRange: {
