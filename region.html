@@ -15,7 +15,21 @@
                 <div id="chart_incid_container" style="height: 300px"></div>
                 <div id="chart_R_container" style="height: 300px"></div>
             </div>
-          </div>
+        </div>
+        <br>
+        <h3 id='title1'  style='text-align: center;'></h3>
+        <div class="row">
+            <div class="col">
+                <div id="chart_C1" style="height: 400px"></div>
+            </div>
+        </div>
+        <br>
+        <h3 id='title2'  style='text-align: center;'></h3>
+        <div class="row">
+            <div class="col">
+                <div id="chart_C2" style="height: 400px"></div>
+            </div>
+        </div>
     </div>
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
@@ -55,6 +69,10 @@
 
         var country = getQueryVariable("country");
         $(".title").text("COVID-19 Time-Varying Reproduction Number of " + country);
+        $("#title1").text("How many COVID-19 cases could have been prevented in " + country +
+        " if its interventions were as effective as those in China?");
+        $("#title2").text("How many COVID-19 cases could have been prevented in " + country +
+        " if its interventions were as effective as those in South Korea?");
 
         var chartIncid = echarts.init(document.getElementById('chart_incid_container'));
         dataFileUrl = './data/' + nameMap(country) + '_incid.json';
@@ -66,6 +84,18 @@
         dataFileUrl = './data/' + nameMap(country) + '_R.json';
         $.get(dataFileUrl, function (data) {
             chartR.setOption(data);
+        });
+
+        var chartC1 = echarts.init(document.getElementById('chart_C1'));
+        dataFileUrl = './data/' + nameMap(country) + "_" + nameMap(country) + '-China_backtest_data.json';
+        $.get(dataFileUrl, function (data) {
+            chartC1.setOption(data);
+        });
+
+        var chartC2 = echarts.init(document.getElementById('chart_C2'));
+        dataFileUrl = './data/' + nameMap(country) + "_" + nameMap(country) + '-Korea_backtest_data.json';
+        $.get(dataFileUrl, function (data) {
+            chartC2.setOption(data);
         });
 
     </script>

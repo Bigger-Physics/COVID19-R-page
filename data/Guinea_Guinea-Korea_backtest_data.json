@@ -1,0 +1,238 @@
+{
+ "color": [
+  "#5DA5DA",
+  "#FAA43A",
+  "#FAA43A",
+  "#FAA43A"
+ ],
+ "title": {
+  "text": ""
+ },
+ "legend": {
+  "top": "10%",
+  "data": [
+   "Real(C)",
+   "Mean(C)"
+  ]
+ },
+ "tooltip": {
+  "trigger": "axis"
+ },
+ "dataset": {
+  "dimensions": [
+   "date",
+   "Mean(C)",
+   "Lower(C)",
+   "Upper(C)",
+   "Real(C)",
+   "Range(C)"
+  ],
+  "source": [
+   {
+    "date": "2020-04-15",
+    "Mean(C)": 512.0,
+    "Lower(C)": 456.0,
+    "Upper(C)": 565.0,
+    "Real(C)": 1335,
+    "Range(C)": 109.0
+   },
+   {
+    "date": "2020-04-16",
+    "Mean(C)": 587.0,
+    "Lower(C)": 537.0,
+    "Upper(C)": 645.0,
+    "Real(C)": 1335,
+    "Range(C)": 108.0
+   },
+   {
+    "date": "2020-04-17",
+    "Mean(C)": 606.0,
+    "Lower(C)": 561.0,
+    "Upper(C)": 644.0,
+    "Real(C)": 1335,
+    "Range(C)": 82.0
+   },
+   {
+    "date": "2020-04-18",
+    "Mean(C)": 625.0,
+    "Lower(C)": 583.0,
+    "Upper(C)": 682.0,
+    "Real(C)": 1335,
+    "Range(C)": 99.0
+   },
+   {
+    "date": "2020-04-19",
+    "Mean(C)": 570.0,
+    "Lower(C)": 541.0,
+    "Upper(C)": 606.0,
+    "Real(C)": 1335,
+    "Range(C)": 65.0
+   },
+   {
+    "date": "2020-04-20",
+    "Mean(C)": 583.0,
+    "Lower(C)": 550.0,
+    "Upper(C)": 619.0,
+    "Real(C)": 1335,
+    "Range(C)": 69.0
+   },
+   {
+    "date": "2020-04-21",
+    "Mean(C)": 552.0,
+    "Lower(C)": 531.0,
+    "Upper(C)": 573.0,
+    "Real(C)": 1335,
+    "Range(C)": 41.0
+   },
+   {
+    "date": "2020-04-22",
+    "Mean(C)": 844.0,
+    "Lower(C)": 808.0,
+    "Upper(C)": 891.0,
+    "Real(C)": 1335,
+    "Range(C)": 82.0
+   },
+   {
+    "date": "2020-04-23",
+    "Mean(C)": 942.0,
+    "Lower(C)": 905.0,
+    "Upper(C)": 986.0,
+    "Real(C)": 1335,
+    "Range(C)": 81.0
+   },
+   {
+    "date": "2020-04-24",
+    "Mean(C)": 1029.0,
+    "Lower(C)": 992.0,
+    "Upper(C)": 1080.0,
+    "Real(C)": 1335,
+    "Range(C)": 88.0
+   },
+   {
+    "date": "2020-04-25",
+    "Mean(C)": 1137.0,
+    "Lower(C)": 1092.0,
+    "Upper(C)": 1190.0,
+    "Real(C)": 1335,
+    "Range(C)": 98.0
+   },
+   {
+    "date": "2020-04-26",
+    "Mean(C)": 1274.0,
+    "Lower(C)": 1225.0,
+    "Upper(C)": 1311.0,
+    "Real(C)": 1335,
+    "Range(C)": 85.0
+   },
+   {
+    "date": "2020-04-27",
+    "Mean(C)": 1224.0,
+    "Lower(C)": 1188.0,
+    "Upper(C)": 1265.0,
+    "Real(C)": 1335,
+    "Range(C)": 77.0
+   },
+   {
+    "date": "2020-04-28",
+    "Mean(C)": 1289.0,
+    "Lower(C)": 1260.0,
+    "Upper(C)": 1318.0,
+    "Real(C)": 1335,
+    "Range(C)": 58.0
+   },
+   {
+    "date": "2020-04-29",
+    "Mean(C)": 1294.0,
+    "Lower(C)": 1270.0,
+    "Upper(C)": 1319.0,
+    "Real(C)": 1335,
+    "Range(C)": 48.0
+   },
+   {
+    "date": "2020-04-30",
+    "Mean(C)": 1296.0,
+    "Lower(C)": 1279.0,
+    "Upper(C)": 1313.0,
+    "Real(C)": 1335,
+    "Range(C)": 34.0
+   }
+  ]
+ },
+ "xAxis": {
+  "type": "time",
+  "name": "The date when the interventions were assumed to begin to take effect",
+  "nameTextStyle": {
+   "fontWeight": "bold"
+  },
+  "nameLocation": "middle",
+  "nameGap": 40
+ },
+ "yAxis": {
+  "name": "Cumulative incidence at the latest date",
+  "nameTextStyle": {
+   "fontWeight": "bold"
+  },
+  "nameLocation": "middle",
+  "nameGap": 40
+ },
+ "series": [
+  {
+   "type": "line",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#5DA5DA",
+    "type": "dashed"
+   },
+   "encode": {
+    "x": "date",
+    "y": "Real(C)",
+    "seriesName": "Real(C)"
+   }
+  },
+  {
+   "type": "line",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#FAA43A"
+   },
+   "encode": {
+    "x": "date",
+    "y": "Mean(C)",
+    "seriesName": "Mean(C)"
+   }
+  },
+  {
+   "type": "line",
+   "stack": "CI(C)",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#FAA43A",
+    "opacity": 0.1
+   },
+   "encode": {
+    "x": "date",
+    "y": "Lower(C)",
+    "seriesName": "Lower(C)"
+   }
+  },
+  {
+   "type": "line",
+   "stack": "CI(C)",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#FAA43A",
+    "opacity": 0.1
+   },
+   "areaStyle": {
+    "color": "#FAA43A",
+    "opacity": 0.5
+   },
+   "encode": {
+    "x": "date",
+    "y": "Range(C)",
+    "seriesName": "Upper(C)",
+    "tooltip": "Upper(C)"
+   }
+  }
+ ]
+}

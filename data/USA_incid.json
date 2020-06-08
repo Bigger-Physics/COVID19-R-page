@@ -290,6 +290,11 @@
     "local": 30859
    },
    {
+    "dates": "2020-04-11",
+    "imported": 0,
+    "local": 0
+   },
+   {
     "dates": "2020-04-12",
     "imported": 0,
     "local": 31606
@@ -383,6 +388,121 @@
     "dates": "2020-04-30",
     "imported": 0,
     "local": 20517
+   },
+   {
+    "dates": "2020-05-01",
+    "imported": 0,
+    "local": 31379
+   },
+   {
+    "dates": "2020-05-02",
+    "imported": 0,
+    "local": 31774
+   },
+   {
+    "dates": "2020-05-03",
+    "imported": 0,
+    "local": 26753
+   },
+   {
+    "dates": "2020-05-04",
+    "imported": 0,
+    "local": 31839
+   },
+   {
+    "dates": "2020-05-05",
+    "imported": 0,
+    "local": 29266
+   },
+   {
+    "dates": "2020-05-06",
+    "imported": 0,
+    "local": 16200
+   },
+   {
+    "dates": "2020-05-07",
+    "imported": 0,
+    "local": 22267
+   },
+   {
+    "dates": "2020-05-08",
+    "imported": 0,
+    "local": 22119
+   },
+   {
+    "dates": "2020-05-09",
+    "imported": 0,
+    "local": 30303
+   },
+   {
+    "dates": "2020-05-10",
+    "imported": 0,
+    "local": 0
+   },
+   {
+    "dates": "2020-05-11",
+    "imported": 0,
+    "local": 25870
+   },
+   {
+    "dates": "2020-05-12",
+    "imported": 0,
+    "local": 26642
+   },
+   {
+    "dates": "2020-05-13",
+    "imported": 0,
+    "local": 23767
+   },
+   {
+    "dates": "2020-05-14",
+    "imported": 0,
+    "local": 18044
+   },
+   {
+    "dates": "2020-05-15",
+    "imported": 0,
+    "local": 21424
+   },
+   {
+    "dates": "2020-05-16",
+    "imported": 0,
+    "local": 20840
+   },
+   {
+    "dates": "2020-05-17",
+    "imported": 0,
+    "local": 27090
+   },
+   {
+    "dates": "2020-05-18",
+    "imported": 0,
+    "local": 22813
+   },
+   {
+    "dates": "2020-05-19",
+    "imported": 0,
+    "local": 31967
+   },
+   {
+    "dates": "2020-05-20",
+    "imported": 0,
+    "local": 13227
+   },
+   {
+    "dates": "2020-05-21",
+    "imported": 0,
+    "local": 24417
+   },
+   {
+    "dates": "2020-05-22",
+    "imported": 0,
+    "local": 23310
+   },
+   {
+    "dates": "2020-05-23",
+    "imported": 0,
+    "local": 22787
    }
   ]
  },

@@ -1,0 +1,382 @@
+{
+ "color": [
+  "#5DA5DA",
+  "#FAA43A",
+  "#FAA43A",
+  "#FAA43A"
+ ],
+ "title": {
+  "text": ""
+ },
+ "legend": {
+  "top": "10%",
+  "data": [
+   "Real(C)",
+   "Mean(C)"
+  ]
+ },
+ "tooltip": {
+  "trigger": "axis"
+ },
+ "dataset": {
+  "dimensions": [
+   "date",
+   "Mean(C)",
+   "Lower(C)",
+   "Upper(C)",
+   "Real(C)",
+   "Range(C)"
+  ],
+  "source": [
+   {
+    "date": "2020-03-28",
+    "Mean(C)": 3179.0,
+    "Lower(C)": 2915.0,
+    "Upper(C)": 3438.0,
+    "Real(C)": 5344,
+    "Range(C)": 524.0
+   },
+   {
+    "date": "2020-03-29",
+    "Mean(C)": 3919.0,
+    "Lower(C)": 3681.0,
+    "Upper(C)": 4173.0,
+    "Real(C)": 5344,
+    "Range(C)": 492.0
+   },
+   {
+    "date": "2020-03-30",
+    "Mean(C)": 3495.0,
+    "Lower(C)": 3214.0,
+    "Upper(C)": 3788.0,
+    "Real(C)": 5344,
+    "Range(C)": 575.0
+   },
+   {
+    "date": "2020-03-31",
+    "Mean(C)": 3363.0,
+    "Lower(C)": 3127.0,
+    "Upper(C)": 3590.0,
+    "Real(C)": 5344,
+    "Range(C)": 463.0
+   },
+   {
+    "date": "2020-04-01",
+    "Mean(C)": 2691.0,
+    "Lower(C)": 2491.0,
+    "Upper(C)": 2871.0,
+    "Real(C)": 5344,
+    "Range(C)": 380.0
+   },
+   {
+    "date": "2020-04-02",
+    "Mean(C)": 1874.0,
+    "Lower(C)": 1784.0,
+    "Upper(C)": 1966.0,
+    "Real(C)": 5344,
+    "Range(C)": 182.0
+   },
+   {
+    "date": "2020-04-03",
+    "Mean(C)": 1713.0,
+    "Lower(C)": 1643.0,
+    "Upper(C)": 1801.0,
+    "Real(C)": 5344,
+    "Range(C)": 158.0
+   },
+   {
+    "date": "2020-04-04",
+    "Mean(C)": 1985.0,
+    "Lower(C)": 1884.0,
+    "Upper(C)": 2112.0,
+    "Real(C)": 5344,
+    "Range(C)": 227.0
+   },
+   {
+    "date": "2020-04-05",
+    "Mean(C)": 1709.0,
+    "Lower(C)": 1662.0,
+    "Upper(C)": 1766.0,
+    "Real(C)": 5344,
+    "Range(C)": 103.0
+   },
+   {
+    "date": "2020-04-06",
+    "Mean(C)": 1950.0,
+    "Lower(C)": 1873.0,
+    "Upper(C)": 2032.0,
+    "Real(C)": 5344,
+    "Range(C)": 159.0
+   },
+   {
+    "date": "2020-04-07",
+    "Mean(C)": 2082.0,
+    "Lower(C)": 2008.0,
+    "Upper(C)": 2165.0,
+    "Real(C)": 5344,
+    "Range(C)": 157.0
+   },
+   {
+    "date": "2020-04-08",
+    "Mean(C)": 2115.0,
+    "Lower(C)": 2025.0,
+    "Upper(C)": 2226.0,
+    "Real(C)": 5344,
+    "Range(C)": 201.0
+   },
+   {
+    "date": "2020-04-09",
+    "Mean(C)": 2036.0,
+    "Lower(C)": 1981.0,
+    "Upper(C)": 2098.0,
+    "Real(C)": 5344,
+    "Range(C)": 117.0
+   },
+   {
+    "date": "2020-04-10",
+    "Mean(C)": 2243.0,
+    "Lower(C)": 2181.0,
+    "Upper(C)": 2321.0,
+    "Real(C)": 5344,
+    "Range(C)": 140.0
+   },
+   {
+    "date": "2020-04-11",
+    "Mean(C)": 2359.0,
+    "Lower(C)": 2286.0,
+    "Upper(C)": 2441.0,
+    "Real(C)": 5344,
+    "Range(C)": 155.0
+   },
+   {
+    "date": "2020-04-12",
+    "Mean(C)": 2448.0,
+    "Lower(C)": 2392.0,
+    "Upper(C)": 2526.0,
+    "Real(C)": 5344,
+    "Range(C)": 133.0
+   },
+   {
+    "date": "2020-04-13",
+    "Mean(C)": 2358.0,
+    "Lower(C)": 2299.0,
+    "Upper(C)": 2414.0,
+    "Real(C)": 5344,
+    "Range(C)": 115.0
+   },
+   {
+    "date": "2020-04-14",
+    "Mean(C)": 2635.0,
+    "Lower(C)": 2574.0,
+    "Upper(C)": 2708.0,
+    "Real(C)": 5344,
+    "Range(C)": 134.0
+   },
+   {
+    "date": "2020-04-15",
+    "Mean(C)": 3164.0,
+    "Lower(C)": 3047.0,
+    "Upper(C)": 3272.0,
+    "Real(C)": 5344,
+    "Range(C)": 225.0
+   },
+   {
+    "date": "2020-04-16",
+    "Mean(C)": 3529.0,
+    "Lower(C)": 3400.0,
+    "Upper(C)": 3661.0,
+    "Real(C)": 5344,
+    "Range(C)": 260.0
+   },
+   {
+    "date": "2020-04-17",
+    "Mean(C)": 3607.0,
+    "Lower(C)": 3469.0,
+    "Upper(C)": 3729.0,
+    "Real(C)": 5344,
+    "Range(C)": 260.0
+   },
+   {
+    "date": "2020-04-18",
+    "Mean(C)": 3566.0,
+    "Lower(C)": 3433.0,
+    "Upper(C)": 3692.0,
+    "Real(C)": 5344,
+    "Range(C)": 260.0
+   },
+   {
+    "date": "2020-04-19",
+    "Mean(C)": 3987.0,
+    "Lower(C)": 3869.0,
+    "Upper(C)": 4112.0,
+    "Real(C)": 5344,
+    "Range(C)": 242.0
+   },
+   {
+    "date": "2020-04-20",
+    "Mean(C)": 4889.0,
+    "Lower(C)": 4691.0,
+    "Upper(C)": 5116.0,
+    "Real(C)": 5344,
+    "Range(C)": 426.0
+   },
+   {
+    "date": "2020-04-21",
+    "Mean(C)": 4560.0,
+    "Lower(C)": 4441.0,
+    "Upper(C)": 4677.0,
+    "Real(C)": 5344,
+    "Range(C)": 235.0
+   },
+   {
+    "date": "2020-04-22",
+    "Mean(C)": 4640.0,
+    "Lower(C)": 4504.0,
+    "Upper(C)": 4765.0,
+    "Real(C)": 5344,
+    "Range(C)": 261.0
+   },
+   {
+    "date": "2020-04-23",
+    "Mean(C)": 4716.0,
+    "Lower(C)": 4573.0,
+    "Upper(C)": 4830.0,
+    "Real(C)": 5344,
+    "Range(C)": 257.0
+   },
+   {
+    "date": "2020-04-24",
+    "Mean(C)": 4807.0,
+    "Lower(C)": 4717.0,
+    "Upper(C)": 4898.0,
+    "Real(C)": 5344,
+    "Range(C)": 181.0
+   },
+   {
+    "date": "2020-04-25",
+    "Mean(C)": 5210.0,
+    "Lower(C)": 5112.0,
+    "Upper(C)": 5296.0,
+    "Real(C)": 5344,
+    "Range(C)": 184.0
+   },
+   {
+    "date": "2020-04-26",
+    "Mean(C)": 5454.0,
+    "Lower(C)": 5374.0,
+    "Upper(C)": 5535.0,
+    "Real(C)": 5344,
+    "Range(C)": 161.0
+   },
+   {
+    "date": "2020-04-27",
+    "Mean(C)": 5280.0,
+    "Lower(C)": 5213.0,
+    "Upper(C)": 5362.0,
+    "Real(C)": 5344,
+    "Range(C)": 149.0
+   },
+   {
+    "date": "2020-04-28",
+    "Mean(C)": 5218.0,
+    "Lower(C)": 5150.0,
+    "Upper(C)": 5278.0,
+    "Real(C)": 5344,
+    "Range(C)": 127.0
+   },
+   {
+    "date": "2020-04-29",
+    "Mean(C)": 5170.0,
+    "Lower(C)": 5134.0,
+    "Upper(C)": 5209.0,
+    "Real(C)": 5344,
+    "Range(C)": 75.0
+   },
+   {
+    "date": "2020-04-30",
+    "Mean(C)": 5166.0,
+    "Lower(C)": 5144.0,
+    "Upper(C)": 5188.0,
+    "Real(C)": 5344,
+    "Range(C)": 44.0
+   }
+  ]
+ },
+ "xAxis": {
+  "type": "time",
+  "name": "The date when the interventions were assumed to begin to take effect",
+  "nameTextStyle": {
+   "fontWeight": "bold"
+  },
+  "nameLocation": "middle",
+  "nameGap": 40
+ },
+ "yAxis": {
+  "name": "Cumulative incidence at the latest date",
+  "nameTextStyle": {
+   "fontWeight": "bold"
+  },
+  "nameLocation": "middle",
+  "nameGap": 40
+ },
+ "series": [
+  {
+   "type": "line",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#5DA5DA",
+    "type": "dashed"
+   },
+   "encode": {
+    "x": "date",
+    "y": "Real(C)",
+    "seriesName": "Real(C)"
+   }
+  },
+  {
+   "type": "line",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#FAA43A"
+   },
+   "encode": {
+    "x": "date",
+    "y": "Mean(C)",
+    "seriesName": "Mean(C)"
+   }
+  },
+  {
+   "type": "line",
+   "stack": "CI(C)",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#FAA43A",
+    "opacity": 0.1
+   },
+   "encode": {
+    "x": "date",
+    "y": "Lower(C)",
+    "seriesName": "Lower(C)"
+   }
+  },
+  {
+   "type": "line",
+   "stack": "CI(C)",
+   "symbol": "none",
+   "lineStyle": {
+    "color": "#FAA43A",
+    "opacity": 0.1
+   },
+   "areaStyle": {
+    "color": "#FAA43A",
+    "opacity": 0.5
+   },
+   "encode": {
+    "x": "date",
+    "y": "Range(C)",
+    "seriesName": "Upper(C)",
+    "tooltip": "Upper(C)"
+   }
+  }
+ ]
+}

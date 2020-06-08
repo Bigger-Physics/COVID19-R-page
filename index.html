@@ -9,13 +9,32 @@
 
 <body>
     <div class="container">
-        <h3 class='title' style='text-align: center;'>COVID-19 Time-Varying Reproduction Numbers on Global</h3>
+        <h3 class='title' style='text-align: center;'>
+            COVID-19 Time-Varying Reproduction Numbers on Global</h3>
         <!-- <p style='text-align: center;'>BNU Satety and Systems Science Team (last updated on 2020/4/29)</p> -->
         <div class="row">
             <div class="col">
-                <div id="chart_container" style="height: 560px"></div>
+                <div id="chart_container_R" style="height: 560px"></div>
             </div>
-          </div>
+        </div>
+        <br>
+        <h3 class='title' style='text-align: center;'>
+            How many COVID-19 cases could have been prevented if the 
+            interventions were as effective as those in China?</h3>
+        <div class="row">
+            <div class="col">
+                <div id="chart_container_C1" style="height: 560px"></div>
+            </div>
+        </div>
+        <br>
+        <h3 class='title' style='text-align: center;'>
+            How many COVID-19 cases could have been prevented if the 
+            interventions were as effective as those in South Korea?</h3>
+        <div class="row">
+            <div class="col">
+                <div id="chart_container_C2" style="height: 560px"></div>
+            </div>
+        </div>
     </div>
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
@@ -28,13 +47,15 @@
 
         $.get('./data/world_geo.json', function (worldGeoJson) {
             echarts.registerMap('world', worldGeoJson);
-            var chart = echarts.init(document.getElementById('chart_container'));
-            option = {
+            var chartR = echarts.init(document.getElementById('chart_container_R'));
+            var chartC1 = echarts.init(document.getElementById('chart_container_C1'));
+            var chartC2 = echarts.init(document.getElementById('chart_container_C2'));
+            optionR = {
                 baseOption: {
                     timeline: {
                         data: [],
                         axisType: 'category',
-                        autoPlay: true,
+                        autoPlay: false,
                         loop: false,
                         playInterval: 1000,
                         label: {
@@ -113,7 +134,195 @@
                         name: 'Reproduction Number',
                         type: 'map',
                         map: 'world',
-                        roam: true,
+                        roam: 'scale',
+                        data: []
+                    }]
+                },
+                options: []
+            };
+            
+            optionC1 = {
+                baseOption: {
+                    timeline: {
+                        data: [],
+                        axisType: 'category',
+                        autoPlay: false,
+                        loop: false,
+                        playInterval: 1000,
+                        label: {
+                            color: '#999'
+                        },
+                        symbol: 'none',
+                        lineStyle: {
+                            color: '#555'
+                        },
+                        checkpointStyle: {
+                            color: '#bbb',
+                            borderColor: '#777',
+                            borderWidth: 2
+                        },
+                        controlStyle: {
+                            showNextBtn: false,
+                            showPrevBtn: false,
+                            color: '#666',
+                            borderColor: '#666'
+                        },
+                        emphasis: {
+                            label: {
+                                color: '#fff'
+                            },
+                            controlStyle: {
+                                color: '#aaa',
+                                borderColor: '#aaa'
+                            }
+                        }
+                    },
+                    title: {
+                        text: "",
+                        textAlign: 'center',
+                        left: '50%',
+                        top: '80%',
+                        textStyle: {
+                            fontSize: 36,
+                            color: 'rgba(255, 0, 0, 0.3)'
+                        }
+                    },
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    toolbox: {
+                        show: true,
+                        orient: 'vertical',
+                        left: '5%',
+                        top: 'center',
+                        feature: {
+                            restore: {},
+                            saveAsImage: {}
+                        }
+                    },
+                    visualMap: {
+                        type: "continuous", //piecewise
+                        // splitNumber: 5,
+                        // pieces: [
+                        //     {min: 4}, // 不指定 max，表示 max 为无限大（Infinity）。
+                        //     {min: 3.0, max: 4.0},
+                        //     {min: 2.0, max: 3.0},
+                        //     {min: 1.0, max: 2.0},
+                        //     {min: 0, max: 1.0}
+                        // ],
+                        min: 0,
+                        max: 100,
+                        // text: ['High', 'Low'],
+                        realtime: true,
+                        calculable: true,
+                        inRange: {
+                            color: ['lightgreen', 'YellowGreen', 'yellow', 'orange', 'orangered', 'darkred']
+                        },
+                        right: '5%',
+                        top: 'center',
+                        formatter: function (value) {
+                            return value.toFixed(0) + '%';
+                        }
+                    },
+                    series: [{
+                        name: 'Reduced infections (%)',
+                        type: 'map',
+                        map: 'world',
+                        roam: 'scale',
+                        data: []
+                    }]
+                },
+                options: []
+            };
+            
+            optionC2 = {
+                baseOption: {
+                    timeline: {
+                        data: [],
+                        axisType: 'category',
+                        autoPlay: false,
+                        loop: false,
+                        playInterval: 1000,
+                        label: {
+                            color: '#999'
+                        },
+                        symbol: 'none',
+                        lineStyle: {
+                            color: '#555'
+                        },
+                        checkpointStyle: {
+                            color: '#bbb',
+                            borderColor: '#777',
+                            borderWidth: 2
+                        },
+                        controlStyle: {
+                            showNextBtn: false,
+                            showPrevBtn: false,
+                            color: '#666',
+                            borderColor: '#666'
+                        },
+                        emphasis: {
+                            label: {
+                                color: '#fff'
+                            },
+                            controlStyle: {
+                                color: '#aaa',
+                                borderColor: '#aaa'
+                            }
+                        }
+                    },
+                    title: {
+                        text: "",
+                        textAlign: 'center',
+                        left: '50%',
+                        top: '80%',
+                        textStyle: {
+                            fontSize: 36,
+                            color: 'rgba(255, 0, 0, 0.3)'
+                        }
+                    },
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    toolbox: {
+                        show: true,
+                        orient: 'vertical',
+                        left: '5%',
+                        top: 'center',
+                        feature: {
+                            restore: {},
+                            saveAsImage: {}
+                        }
+                    },
+                    visualMap: {
+                        type: "continuous", //piecewise
+                        // splitNumber: 5,
+                        // pieces: [
+                        //     {min: 4}, // 不指定 max，表示 max 为无限大（Infinity）。
+                        //     {min: 3.0, max: 4.0},
+                        //     {min: 2.0, max: 3.0},
+                        //     {min: 1.0, max: 2.0},
+                        //     {min: 0, max: 1.0}
+                        // ],
+                        min: 0,
+                        max: 100,
+                        // text: ['High', 'Low'],
+                        realtime: true,
+                        calculable: true,
+                        inRange: {
+                            color: ['lightgreen', 'YellowGreen', 'yellow', 'orange', 'orangered', 'darkred']
+                        },
+                        right: '5%',
+                        top: 'center',
+                        formatter: function (value) {
+                            return value.toFixed(0) + '%';
+                        }
+                    },
+                    series: [{
+                        name: 'Reduced infections (%)',
+                        type: 'map',
+                        map: 'world',
+                        roam: 'scale',
                         data: []
                     }]
                 },
@@ -122,8 +331,8 @@
 
             $.get('./data/world_R.json', function (worldRJson) {
                 for (var i = 0; i < worldRJson.dates.length; i++) {
-                    option.baseOption.timeline.data.push(worldRJson.dates[i]);
-                    option.options.push(
+                    optionR.baseOption.timeline.data.push(worldRJson.dates[i]);
+                    optionR.options.push(
                         {
                             title: {
                                 text: worldRJson.dates[i]
@@ -132,14 +341,66 @@
                                 name: 'Reproduction Number',
                                 type: 'map',
                                 map: 'world',
-                                roam: true,
+                                roam: 'scale',
                                 data: worldRJson.data[i]
                             }]
                         },
                     );
                 }
-                chart.setOption(option);
-                chart.on('click', function (params) {
+                chartR.setOption(optionR);
+                chartR.on('click', function (params) {
+                    if (params.data) {
+                         window.open('./region.html?country=' + params.data.name);
+                    }
+                });
+            });
+
+            $.get('./data/world_reducedcases_scenario_China.json', function (worldJson) {
+                for (var i = 0; i < worldJson.dates.length; i++) {
+                    optionC1.baseOption.timeline.data.push(worldJson.dates[i]);
+                    optionC1.options.push(
+                        {
+                            title: {
+                                text: worldJson.dates[i]
+                            },
+                            series: [{
+                                name: 'Reduced infections (%)',
+                                type: 'map',
+                                map: 'world',
+                                roam: 'scale',
+                                data: worldJson.data[i]
+                            }]
+                        },
+                    );
+                }
+                chartC1.setOption(optionC1);
+                chartC1.on('click', function (params) {
+                    if (params.data) {
+                         window.open('./region.html?country=' + params.data.name);
+                    }
+                });
+            });
+
+            $.get('./data/world_reducedcases_scenario_Korea.json', function (worldJson) {
+                for (var i = 0; i < worldJson.dates.length; i++) {
+                    optionC2.baseOption.timeline.data.push(worldJson.dates[i]);
+                    optionC2.options.push(
+                        {
+                            title: {
+                                text: worldJson.dates[i]
+                            },
+                            series: [{
+                                name: 'Reduced infections (%)',
+                                type: 'map',
+                                map: 'world',
+                                roam: 'scale',
+                                data: worldJson.data[i]
+                            }]
+                        },
+                    );
+                }
+                chartC2.setOption(optionC2);
+                chartC2.on('click', function (params) {
                     if (params.data) {
                          window.open('./region.html?country=' + params.data.name);
                     }
