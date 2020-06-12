@@ -60,6 +60,11 @@
     "local": 0
    },
    {
+    "dates": "2020-03-14",
+    "imported": 0,
+    "local": 0
+   },
+   {
     "dates": "2020-03-15",
     "imported": 0,
     "local": 48
@@ -293,6 +298,201 @@
     "dates": "2020-04-30",
     "imported": 0,
     "local": 260
+   },
+   {
+    "dates": "2020-05-01",
+    "imported": 0,
+    "local": 347
+   },
+   {
+    "dates": "2020-05-02",
+    "imported": 0,
+    "local": 433
+   },
+   {
+    "dates": "2020-05-03",
+    "imported": 0,
+    "local": 292
+   },
+   {
+    "dates": "2020-05-04",
+    "imported": 0,
+    "local": 349
+   },
+   {
+    "dates": "2020-05-05",
+    "imported": 0,
+    "local": 395
+   },
+   {
+    "dates": "2020-05-06",
+    "imported": 0,
+    "local": 484
+   },
+   {
+    "dates": "2020-05-07",
+    "imported": 0,
+    "local": 367
+   },
+   {
+    "dates": "2020-05-08",
+    "imported": 0,
+    "local": 338
+   },
+   {
+    "dates": "2020-05-09",
+    "imported": 0,
+    "local": 336
+   },
+   {
+    "dates": "2020-05-10",
+    "imported": 0,
+    "local": 533
+   },
+   {
+    "dates": "2020-05-11",
+    "imported": 0,
+    "local": 387
+   },
+   {
+    "dates": "2020-05-12",
+    "imported": 0,
+    "local": 233
+   },
+   {
+    "dates": "2020-05-13",
+    "imported": 0,
+    "local": 484
+   },
+   {
+    "dates": "2020-05-14",
+    "imported": 0,
+    "local": 689
+   },
+   {
+    "dates": "2020-05-15",
+    "imported": 0,
+    "local": 568
+   },
+   {
+    "dates": "2020-05-16",
+    "imported": 0,
+    "local": 490
+   },
+   {
+    "dates": "2020-05-17",
+    "imported": 0,
+    "local": 529
+   },
+   {
+    "dates": "2020-05-18",
+    "imported": 0,
+    "local": 489
+   },
+   {
+    "dates": "2020-05-19",
+    "imported": 0,
+    "local": 496
+   },
+   {
+    "dates": "2020-05-20",
+    "imported": 0,
+    "local": 486
+   },
+   {
+    "dates": "2020-05-21",
+    "imported": 0,
+    "local": 693
+   },
+   {
+    "dates": "2020-05-22",
+    "imported": 0,
+    "local": 973
+   },
+   {
+    "dates": "2020-05-23",
+    "imported": 0,
+    "local": 634
+   },
+   {
+    "dates": "2020-05-24",
+    "imported": 0,
+    "local": 949
+   },
+   {
+    "dates": "2020-05-25",
+    "imported": 0,
+    "local": 526
+   },
+   {
+    "dates": "2020-05-26",
+    "imported": 0,
+    "local": 479
+   },
+   {
+    "dates": "2020-05-27",
+    "imported": 0,
+    "local": 415
+   },
+   {
+    "dates": "2020-05-28",
+    "imported": 0,
+    "local": 686
+   },
+   {
+    "dates": "2020-05-29",
+    "imported": 0,
+    "local": 687
+   },
+   {
+    "dates": "2020-05-30",
+    "imported": 0,
+    "local": 678
+   },
+   {
+    "dates": "2020-05-31",
+    "imported": 0,
+    "local": 557
+   },
+   {
+    "dates": "2020-06-01",
+    "imported": 0,
+    "local": 700
+   },
+   {
+    "dates": "2020-06-02",
+    "imported": 0,
+    "local": 467
+   },
+   {
+    "dates": "2020-06-03",
+    "imported": 0,
+    "local": 609
+   },
+   {
+    "dates": "2020-06-04",
+    "imported": 0,
+    "local": 684
+   },
+   {
+    "dates": "2020-06-05",
+    "imported": 0,
+    "local": 585
+   },
+   {
+    "dates": "2020-06-06",
+    "imported": 0,
+    "local": 703
+   },
+   {
+    "dates": "2020-06-07",
+    "imported": 0,
+    "local": 993
+   },
+   {
+    "dates": "2020-06-08",
+    "imported": 0,
+    "local": 672
    }
   ]
  },

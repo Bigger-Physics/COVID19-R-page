@@ -1,0 +1,269 @@
+{
+ "data": [
+  {
+   "Country": "United States of America",
+   "Reduced Infections": 1540714,
+   "Reduced Infections (%)": 83.34
+  },
+  {
+   "Country": "Brazil",
+   "Reduced Infections": 664573,
+   "Reduced Infections (%)": 98.77
+  },
+  {
+   "Country": "Russia",
+   "Reduced Infections": 472672,
+   "Reduced Infections (%)": 99.17
+  },
+  {
+   "Country": "India",
+   "Reduced Infections": 254663,
+   "Reduced Infections (%)": 99.24
+  },
+  {
+   "Country": "United Kingdom",
+   "Reduced Infections": 237876,
+   "Reduced Infections (%)": 83.01
+  },
+  {
+   "Country": "Peru",
+   "Reduced Infections": 190104,
+   "Reduced Infections (%)": 99.14
+  },
+  {
+   "Country": "Turkey",
+   "Reduced Infections": 134184,
+   "Reduced Infections (%)": 78.92
+  },
+  {
+   "Country": "Chile",
+   "Reduced Infections": 129137,
+   "Reduced Infections (%)": 95.94
+  },
+  {
+   "Country": "Mexico",
+   "Reduced Infections": 111477,
+   "Reduced Infections (%)": 98.13
+  },
+  {
+   "Country": "Iran",
+   "Reduced Infections": 101030,
+   "Reduced Infections (%)": 58.83
+  },
+  {
+   "Country": "Pakistan",
+   "Reduced Infections": 100255,
+   "Reduced Infections (%)": 96.6
+  },
+  {
+   "Country": "Saudi Arabia",
+   "Reduced Infections": 99256,
+   "Reduced Infections (%)": 97.45
+  },
+  {
+   "Country": "Spain",
+   "Reduced Infections": 94287,
+   "Reduced Infections (%)": 36.98
+  },
+  {
+   "Country": "Italy",
+   "Reduced Infections": 79904,
+   "Reduced Infections (%)": 33.99
+  },
+  {
+   "Country": "Canada",
+   "Reduced Infections": 79892,
+   "Reduced Infections (%)": 83.96
+  },
+  {
+   "Country": "Germany",
+   "Reduced Infections": 78108,
+   "Reduced Infections (%)": 42.36
+  },
+  {
+   "Country": "France",
+   "Reduced Infections": 70769,
+   "Reduced Infections (%)": 46.77
+  },
+  {
+   "Country": "Qatar",
+   "Reduced Infections": 67751,
+   "Reduced Infections (%)": 98.46
+  },
+  {
+   "Country": "Belarus",
+   "Reduced Infections": 48291,
+   "Reduced Infections (%)": 99.33
+  },
+  {
+   "Country": "South Africa",
+   "Reduced Infections": 45869,
+   "Reduced Infections (%)": 95.01
+  },
+  {
+   "Country": "Ecuador",
+   "Reduced Infections": 43459,
+   "Reduced Infections (%)": 92.83
+  },
+  {
+   "Country": "Sweden",
+   "Reduced Infections": 37620,
+   "Reduced Infections (%)": 84.13
+  },
+  {
+   "Country": "Singapore",
+   "Reduced Infections": 37488,
+   "Reduced Infections (%)": 96.6
+  },
+  {
+   "Country": "United Arab Emirates",
+   "Reduced Infections": 37402,
+   "Reduced Infections (%)": 96.46
+  },
+  {
+   "Country": "Colombia",
+   "Reduced Infections": 36698,
+   "Reduced Infections (%)": 96.52
+  },
+  {
+   "Country": "Egypt",
+   "Reduced Infections": 33035,
+   "Reduced Infections (%)": 96.9
+  },
+  {
+   "Country": "Belgium",
+   "Reduced Infections": 30798,
+   "Reduced Infections (%)": 52.01
+  },
+  {
+   "Country": "Indonesia",
+   "Reduced Infections": 28484,
+   "Reduced Infections (%)": 91.49
+  },
+  {
+   "Country": "Ukraine",
+   "Reduced Infections": 25937,
+   "Reduced Infections (%)": 94.48
+  },
+  {
+   "Country": "Netherlands",
+   "Reduced Infections": 25213,
+   "Reduced Infections (%)": 53.41
+  },
+  {
+   "Country": "Poland",
+   "Reduced Infections": 22466,
+   "Reduced Infections (%)": 84.76
+  },
+  {
+   "Country": "Portugal",
+   "Reduced Infections": 21421,
+   "Reduced Infections (%)": 61.85
+  },
+  {
+   "Country": "Afghanistan",
+   "Reduced Infections": 20491,
+   "Reduced Infections (%)": 98.04
+  },
+  {
+   "Country": "Argentina",
+   "Reduced Infections": 20401,
+   "Reduced Infections (%)": 92.77
+  },
+  {
+   "Country": "Ireland",
+   "Reduced Infections": 19583,
+   "Reduced Infections (%)": 77.77
+  },
+  {
+   "Country": "Philippines",
+   "Reduced Infections": 17805,
+   "Reduced Infections (%)": 81.3
+  },
+  {
+   "Country": "Romania",
+   "Reduced Infections": 16201,
+   "Reduced Infections (%)": 79.17
+  },
+  {
+   "Country": "Panama",
+   "Reduced Infections": 13984,
+   "Reduced Infections (%)": 87.31
+  },
+  {
+   "Country": "Japan",
+   "Reduced Infections": 13810,
+   "Reduced Infections (%)": 80.36
+  },
+  {
+   "Country": "Kazakhstan",
+   "Reduced Infections": 12051,
+   "Reduced Infections (%)": 93.76
+  },
+  {
+   "Country": "Iraq",
+   "Reduced Infections": 11113,
+   "Reduced Infections (%)": 90.25
+  },
+  {
+   "Country": "Algeria",
+   "Reduced Infections": 9223,
+   "Reduced Infections (%)": 90.92
+  },
+  {
+   "Country": "Israel",
+   "Reduced Infections": 7429,
+   "Reduced Infections (%)": 42.6
+  },
+  {
+   "Country": "Morocco",
+   "Reduced Infections": 6811,
+   "Reduced Infections (%)": 82.91
+  },
+  {
+   "Country": "Switzerland",
+   "Reduced Infections": 5234,
+   "Reduced Infections (%)": 16.96
+  },
+  {
+   "Country": "Malaysia",
+   "Reduced Infections": 4338,
+   "Reduced Infections (%)": 52.28
+  },
+  {
+   "Country": "Czech Republic",
+   "Reduced Infections": 4141,
+   "Reduced Infections (%)": 42.94
+  },
+  {
+   "Country": "Hungary",
+   "Reduced Infections": 3199,
+   "Reduced Infections (%)": 80.74
+  },
+  {
+   "Country": "Norway",
+   "Reduced Infections": 1953,
+   "Reduced Infections (%)": 23.02
+  },
+  {
+   "Country": "Greece",
+   "Reduced Infections": 1033,
+   "Reduced Infections (%)": 35.48
+  },
+  {
+   "Country": "Thailand",
+   "Reduced Infections": 813,
+   "Reduced Infections (%)": 26.37
+  },
+  {
+   "Country": "Australia",
+   "Reduced Infections": 0,
+   "Reduced Infections (%)": 0.0
+  },
+  {
+   "Country": "New Zealand",
+   "Reduced Infections": 0,
+   "Reduced Infections (%)": 0.0
+  }
+ ]
+}

@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COVID-19 Time-Varying Reproduction Numbers on Global</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables@1.10.18/media/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/datatables@1.10.18/media/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
@@ -28,6 +37,24 @@
         </div>
         <br>
         <h3 class='title' style='text-align: center;'>
+            The expected number of infected cases that could have been 
+            prevented if on April 1st China-like interventions were taken
+        </h3>
+        <div class="row">
+            <div class="col">
+                <table id="table_C1" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Reduced Infections</th>
+                            <th>Reduced Infections (%)</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <br>
+        <h3 class='title' style='text-align: center;'>
             How many COVID-19 cases could have been prevented if the 
             interventions were as effective as those in South Korea?</h3>
         <div class="row">
@@ -35,21 +62,33 @@
                 <div id="chart_container_C2" style="height: 560px"></div>
             </div>
         </div>
+        <br>
+        <h3 class='title' style='text-align: center;'>
+            The expected number of infected cases that could have been 
+            prevented if on April 1st South Korea-like interventions were taken
+        </h3>
+        <div class="row">
+            <div class="col">
+                <table id="table_C2" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Reduced Infections</th>
+                            <th>Reduced Infections (%)</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
     
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script> -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
 
         $.get('./data/world_geo.json', function (worldGeoJson) {
             echarts.registerMap('world', worldGeoJson);
-            var chartR = echarts.init(document.getElementById('chart_container_R'));
-            var chartC1 = echarts.init(document.getElementById('chart_container_C1'));
-            var chartC2 = echarts.init(document.getElementById('chart_container_C2'));
+            var chartR = echarts.init(document.getElementById('chart_container_R'), renderer = 'svg');
+            var chartC1 = echarts.init(document.getElementById('chart_container_C1'), renderer = 'svg');
+            var chartC2 = echarts.init(document.getElementById('chart_container_C2'), renderer = 'svg');
             optionR = {
                 baseOption: {
                     timeline: {
@@ -106,7 +145,9 @@
                         top: 'center',
                         feature: {
                             restore: {},
-                            saveAsImage: {}
+                            saveAsImage: {
+                                pixelRatio: 5
+                            }
                         }
                     },
                     visualMap: {
@@ -197,7 +238,9 @@
                         top: 'center',
                         feature: {
                             restore: {},
-                            saveAsImage: {}
+                            saveAsImage: {
+                                pixelRatio: 5
+                            }
                         }
                     },
                     // visualMap: {
@@ -301,7 +344,9 @@
                         top: 'center',
                         feature: {
                             restore: {},
-                            saveAsImage: {}
+                            saveAsImage: {
+                                pixelRatio: 5
+                            }
                         }
                     },
                     // visualMap: {
@@ -349,20 +394,20 @@
                 options: []
             };
 
-            $.get('./data/world_R.json', function (worldRJson) {
-                for (var i = 0; i < worldRJson.dates.length; i++) {
-                    optionR.baseOption.timeline.data.push(worldRJson.dates[i]);
+            $.get('./data/world_R.json', function (worldJson) {
+                for (var i = 0; i < worldJson.dates.length; i++) {
+                    optionR.baseOption.timeline.data.push(worldJson.dates[i]);
                     optionR.options.push(
                         {
                             title: {
-                                text: worldRJson.dates[i]
+                                text: worldJson.dates[i]
                             },
                             series: [{
                                 name: 'Reproduction Number',
                                 type: 'map',
                                 map: 'world',
                                 roam:  false,
-                                data: worldRJson.data[i]
+                                data: worldJson.data[i]
                             }]
                         },
                     );
@@ -372,6 +417,12 @@
                     if (params.data) {
                          window.open('./region.html?country=' + params.data.name);
                     }
+                });
+
+                chartR.on('timelinechanged', function (params) {
+                    // console.log(worldJson.dates[params.currentIndex]);
+                    // var chartTitle = 'R_' + worldJson.dates[params.currentIndex];
+                    // saveChart('chart_container_R', chartTitle)
                 });
             });
 
@@ -384,7 +435,7 @@
                                 text: worldJson.dates[i]
                             },
                             series: [{
-                                name: 'Reduced infections ',
+                                name: 'Reduced infections',
                                 type: 'map',
                                 map: 'world',
                                 roam:  false,
@@ -399,6 +450,12 @@
                          window.open('./region.html?country=' + params.data.name);
                     }
                 });
+
+                chartC1.on('timelinechanged', function (params) {
+                    // console.log(worldJson.dates[params.currentIndex]);
+                    // var chartTitle = 'C1_' + worldJson.dates[params.currentIndex]; 
+                    // saveChart('chart_container_C1', chartTitle)
+                });
             });
 
             $.get('./data/world_reducedcases_scenario_Korea.json', function (worldJson) {
@@ -410,7 +467,7 @@
                                 text: worldJson.dates[i]
                             },
                             series: [{
-                                name: 'Reduced infections ',
+                                name: 'Reduced infections',
                                 type: 'map',
                                 map: 'world',
                                 roam:  false,
@@ -425,8 +482,60 @@
                          window.open('./region.html?country=' + params.data.name);
                     }
                 });
+
+                chartC2.on('timelinechanged', function (params) {
+                    // console.log(worldJson.dates[params.currentIndex]);
+                    // var chartTitle = 'C2_' + worldJson.dates[params.currentIndex]; 
+                    // saveChart('chart_container_C2', chartTitle)
+                });
             });
         });
+
+        function saveChart(chartId, chartTitle) {
+            var chart = echarts.getInstanceByDom(document.getElementById(chartId));
+            var url = chart.getConnectedDataURL({
+                pixelRatio: 5,
+                backgroundColor: '#fff',
+                excludeComponents: ['toolbox', 'timeline'],
+                type: 'png'
+            });
+            var $a = document.createElement('a');
+            var type = 'png';
+            $a.download = chartTitle + '.' + type;
+            $a.target = '_blank';
+            $a.href = url;
+            var evt = new MouseEvent('click', {
+                view: window,
+                bubbles: true,
+                cancelable: false
+            });
+            $a.dispatchEvent(evt);
+        }
+
+
+        $(document).ready(function() {
+            $('#table_C1').DataTable( {
+                "ajax": "./data/scenario_China_reducedcases_2020-04-01.json",
+                "columns": [
+                    { "data": "Country" },
+                    { "data": "Reduced Infections" },
+                    { "data": "Reduced Infections (%)" }
+                ],
+                "lengthChange": false,
+                "ordering": false
+            } );
+
+            $('#table_C2').DataTable( {
+                "ajax": "./data/scenario_Korea_reducedcases_2020-04-01.json",
+                "columns": [
+                    { "data": "Country" },
+                    { "data": "Reduced Infections" },
+                    { "data": "Reduced Infections (%)" }
+                ],
+                "lengthChange": false,
+                "ordering": false
+            } );
+        } );
     </script>
 </body>
 
