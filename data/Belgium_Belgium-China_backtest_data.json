@@ -6,7 +6,7 @@
   "#FAA43A"
  ],
  "title": {
-  "text": ""
+  "text": "Cumulative incidence on 2020-06-08"
  },
  "legend": {
   "top": "10%",
@@ -704,7 +704,7 @@
   "nameGap": 40
  },
  "yAxis": {
-  "name": "Cumulative incidence at the latest date",
+  "name": "Cumulative incidence on 2020-06-08",
   "nameTextStyle": {
    "fontWeight": "bold"
   },

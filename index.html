@@ -14,12 +14,62 @@
     <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables@1.10.18/media/css/jquery.dataTables.min.css">
     <script src="https://cdn.jsdelivr.net/npm/datatables@1.10.18/media/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+    MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 
 <body>
     <div class="container">
+        <h2 class='title' style='text-align: center;'>
+            How many COVID-19 cases could have been prevented in the US if its 
+            interventions were as effective as those in China and South Korea?
+        </h2>
+        <div class="row">
+            <div class="col">
+                <p>
+                    A reproduction number $R$ is roughly how many new cases an 
+                    infector will infect during the beginning and end of his/her infection. 
+                    Often due to interventions and many other factors, it is a time-varying 
+                    quantity. Thus, $R(t)$. Here we show this $R_{C}(t)$ for each country/region 
+                    $C$ that we have collected data from various sources. 
+                </p>
+                <p>
+                    Besides this $R_{C}(t)$, we also illustrate how many cases in country/region $C$ 
+                    can be prevented if Chinese-like or South Korea-like interventions are taken at 
+                    an early date $\tau$ and the interventions are assumed to be as effective in $C$ 
+                    as in China or South Korea respectively. This is done by matching and replacing 
+                    $R_{C}\left(t\right)$ and $R_{cn}\left(t\right)$ (or $R_{kr}\left(t\right)$ ) 
+                    at time $\tau$, and using the latter for $t>\tau$. Let us call each of these two 
+                    scenarios, respectively, the China model $S\left(C-cn,\tau\right)$ and the South 
+                    Korea model $S\left(C-kr,\tau\right)$. We then estimate the accumulated number of 
+                    cases in $C$ of those scenarios at a time $T$, which is the last date of our data 
+                    that we currently have on each country $C$. We then compare those two estimated 
+                    numbers against the actual accumulated number of cases in $C$, and denote it as 
+                    $Pr_{C-cn}\left(T;\tau\right)=C_{C}\left(T\right)-C_{C-cn}\left(T;\tau\right)$, 
+                    or $Pr_{C-kr}\left(T;\tau\right)=C_{C}\left(T\right)-C_{C-kr}\left(T;\tau\right)$ 
+                    respectively. It is a function of $\tau$, which is the date of taking the China-like 
+                    or South Korea-like interventions and also of $T$, which is the date that we intend 
+                    to do such a comparison. When $T$ is fixed, then it is only a function of $\tau$.
+                </p>
+                <p>
+                    For more information, please check out our manuscript at 
+                    Medrxiv 10.1101/2020.05.06.20092981: 
+                    <a href="https://medrxiv.org/cgi/content/short/2020.05.06.20092981v1" target="_blank">
+                        How many COVID-19 cases could have been prevented in the US if its interventions 
+                        were as effective as those in China and South Korea? </a>
+                </p>
+            </div>
+        </div>
+
         <h3 class='title' style='text-align: center;'>
-            COVID-19 Time-Varying Reproduction Numbers on Global</h3>
+            COVID-19 Time-Varying Reproduction Numbers All Over the World</h3>
         <!-- <p style='text-align: center;'>BNU Satety and Systems Science Team (last updated on 2020/4/29)</p> -->
         <div class="row">
             <div class="col">
@@ -36,10 +86,15 @@
             </div>
         </div>
         <br>
-        <h3 class='title' style='text-align: center;'>
-            The expected number of infected cases that could have been 
-            prevented if on April 1st China-like interventions were taken
-        </h3>
+        <div class="row">
+            <div class="col">
+                In this table, we show the expected number of infected cases that could have been 
+                prevented if on April 1st China-like interventions were taken 
+                in a country/region C, and also the corresponding percentage, according to our 
+                estimation. The limitations of this estimation can be found in our manuscript on 
+                MedrXiv.
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <table id="table_C1" class="display" style="width:100%">
@@ -63,10 +118,15 @@
             </div>
         </div>
         <br>
-        <h3 class='title' style='text-align: center;'>
-            The expected number of infected cases that could have been 
-            prevented if on April 1st South Korea-like interventions were taken
-        </h3>
+        <div class="row">
+            <div class="col">
+                In this table, we show the expected number of infected cases that could have been 
+                prevented if on April 1st South Korea-like interventions were taken 
+                in a country/region C, and also the corresponding percentage, according to our 
+                estimation. The limitations of this estimation can be found in our manuscript on 
+                MedrXiv.
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <table id="table_C2" class="display" style="width:100%">
@@ -522,6 +582,7 @@
                     { "data": "Reduced Infections (%)" }
                 ],
                 "lengthChange": false,
+                "searching": false,
                 "ordering": false
             } );
 
@@ -533,6 +594,7 @@
                     { "data": "Reduced Infections (%)" }
                 ],
                 "lengthChange": false,
+                "searching": false,
                 "ordering": false
             } );
         } );
