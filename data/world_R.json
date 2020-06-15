@@ -266,60 +266,36 @@
    {
     "name": "China",
     "value": 1.54
-   },
-   {
-    "name": "Singapore",
-    "value": 1.76
    }
   ],
   [
    {
     "name": "China",
     "value": 1.45
-   },
-   {
-    "name": "Singapore",
-    "value": 1.53
    }
   ],
   [
    {
     "name": "China",
     "value": 1.31
-   },
-   {
-    "name": "Singapore",
-    "value": 1.68
    }
   ],
   [
    {
     "name": "China",
     "value": 1.22
-   },
-   {
-    "name": "Singapore",
-    "value": 1.62
    }
   ],
   [
    {
     "name": "China",
     "value": 1.11
-   },
-   {
-    "name": "Singapore",
-    "value": 1.46
    }
   ],
   [
    {
     "name": "China",
     "value": 0.98
-   },
-   {
-    "name": "Singapore",
-    "value": 0.81
    }
   ],
   [
@@ -330,10 +306,6 @@
    {
     "name": "Japan",
     "value": 0.15
-   },
-   {
-    "name": "Singapore",
-    "value": 0.77
    }
   ],
   [
@@ -344,10 +316,6 @@
    {
     "name": "Japan",
     "value": 0.08
-   },
-   {
-    "name": "Singapore",
-    "value": 1.01
    }
   ],
   [
@@ -358,10 +326,6 @@
    {
     "name": "Japan",
     "value": 0.44
-   },
-   {
-    "name": "Singapore",
-    "value": 1.26
    }
   ],
   [
@@ -372,10 +336,6 @@
    {
     "name": "Japan",
     "value": 1.24
-   },
-   {
-    "name": "Singapore",
-    "value": 1.14
    }
   ],
   [
@@ -386,10 +346,6 @@
    {
     "name": "Japan",
     "value": 2.39
-   },
-   {
-    "name": "Singapore",
-    "value": 1.08
    }
   ],
   [
@@ -400,10 +356,6 @@
    {
     "name": "Japan",
     "value": 2.45
-   },
-   {
-    "name": "Singapore",
-    "value": 1.05
    }
   ],
   [
@@ -417,7 +369,7 @@
    },
    {
     "name": "Singapore",
-    "value": 1.12
+    "value": 1.11
    }
   ],
   [
@@ -459,7 +411,7 @@
    },
    {
     "name": "Singapore",
-    "value": 0.66
+    "value": 0.65
    }
   ],
   [
@@ -3358,10 +3310,6 @@
     "value": 1.91
    },
    {
-    "name": "New Zealand",
-    "value": 3.6
-   },
-   {
     "name": "Norway",
     "value": 1.42
    },
@@ -3578,10 +3526,6 @@
    {
     "name": "Netherlands",
     "value": 1.85
-   },
-   {
-    "name": "New Zealand",
-    "value": 2.98
    },
    {
     "name": "Norway",
@@ -3808,10 +3752,6 @@
    {
     "name": "Netherlands",
     "value": 1.77
-   },
-   {
-    "name": "New Zealand",
-    "value": 2.56
    },
    {
     "name": "Norway",
@@ -4042,10 +3982,6 @@
    {
     "name": "Netherlands",
     "value": 1.66
-   },
-   {
-    "name": "New Zealand",
-    "value": 2.18
    },
    {
     "name": "Nigeria",
@@ -4284,10 +4220,6 @@
    {
     "name": "Netherlands",
     "value": 1.57
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.89
    },
    {
     "name": "Nigeria",
@@ -4532,10 +4464,6 @@
     "value": 1.46
    },
    {
-    "name": "New Zealand",
-    "value": 1.73
-   },
-   {
     "name": "Nigeria",
     "value": 2.4
    },
@@ -4776,10 +4704,6 @@
    {
     "name": "Netherlands",
     "value": 1.32
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.37
    },
    {
     "name": "Nigeria",
@@ -5024,10 +4948,6 @@
     "value": 1.25
    },
    {
-    "name": "New Zealand",
-    "value": 1.23
-   },
-   {
     "name": "Nigeria",
     "value": 1.78
    },
@@ -5268,10 +5188,6 @@
    {
     "name": "Netherlands",
     "value": 1.18
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.09
    },
    {
     "name": "Nigeria",
@@ -5516,10 +5432,6 @@
     "value": 1.1
    },
    {
-    "name": "New Zealand",
-    "value": 0.98
-   },
-   {
     "name": "Nigeria",
     "value": 1.8
    },
@@ -5760,10 +5672,6 @@
    {
     "name": "Netherlands",
     "value": 1.03
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.94
    },
    {
     "name": "Nigeria",
@@ -6008,10 +5916,6 @@
     "value": 1.03
    },
    {
-    "name": "New Zealand",
-    "value": 0.86
-   },
-   {
     "name": "Nigeria",
     "value": 1.54
    },
@@ -6254,10 +6158,6 @@
     "value": 1.03
    },
    {
-    "name": "New Zealand",
-    "value": 0.84
-   },
-   {
     "name": "Nigeria",
     "value": 1.15
    },
@@ -6498,10 +6398,6 @@
    {
     "name": "Netherlands",
     "value": 1.01
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.82
    },
    {
     "name": "Nigeria",
@@ -6750,10 +6646,6 @@
     "value": 1.0
    },
    {
-    "name": "New Zealand",
-    "value": 0.71
-   },
-   {
     "name": "Nigeria",
     "value": 1.16
    },
@@ -6998,10 +6890,6 @@
    {
     "name": "Netherlands",
     "value": 1.02
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.67
    },
    {
     "name": "Nigeria",
@@ -7250,10 +7138,6 @@
     "value": 1.06
    },
    {
-    "name": "New Zealand",
-    "value": 0.63
-   },
-   {
     "name": "Nigeria",
     "value": 0.92
    },
@@ -7498,10 +7382,6 @@
    {
     "name": "Netherlands",
     "value": 1.11
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.58
    },
    {
     "name": "Nigeria",
@@ -7754,10 +7634,6 @@
     "value": 1.08
    },
    {
-    "name": "New Zealand",
-    "value": 0.55
-   },
-   {
     "name": "Nigeria",
     "value": 0.94
    },
@@ -8006,10 +7882,6 @@
    {
     "name": "Netherlands",
     "value": 1.06
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.52
    },
    {
     "name": "Nigeria",
@@ -8262,10 +8134,6 @@
     "value": 1.06
    },
    {
-    "name": "New Zealand",
-    "value": 0.5
-   },
-   {
     "name": "Nigeria",
     "value": 0.76
    },
@@ -8514,10 +8382,6 @@
    {
     "name": "Netherlands",
     "value": 1.01
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.48
    },
    {
     "name": "Nigeria",
@@ -8770,10 +8634,6 @@
     "value": 0.98
    },
    {
-    "name": "New Zealand",
-    "value": 0.42
-   },
-   {
     "name": "Nigeria",
     "value": 0.79
    },
@@ -9022,10 +8882,6 @@
    {
     "name": "Netherlands",
     "value": 0.97
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.41
    },
    {
     "name": "Nigeria",
@@ -9278,10 +9134,6 @@
     "value": 0.95
    },
    {
-    "name": "New Zealand",
-    "value": 0.4
-   },
-   {
     "name": "Nigeria",
     "value": 0.57
    },
@@ -9530,10 +9382,6 @@
    {
     "name": "Netherlands",
     "value": 0.94
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.39
    },
    {
     "name": "Nigeria",
@@ -9786,10 +9634,6 @@
     "value": 0.93
    },
    {
-    "name": "New Zealand",
-    "value": 0.4
-   },
-   {
     "name": "Nigeria",
     "value": 2.08
    },
@@ -10038,10 +9882,6 @@
    {
     "name": "Netherlands",
     "value": 0.92
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.47
    },
    {
     "name": "Nigeria",
@@ -10294,10 +10134,6 @@
     "value": 0.93
    },
    {
-    "name": "New Zealand",
-    "value": 0.46
-   },
-   {
     "name": "Nigeria",
     "value": 1.19
    },
@@ -10546,10 +10382,6 @@
    {
     "name": "Netherlands",
     "value": 0.92
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.54
    },
    {
     "name": "Nigeria",
@@ -10802,10 +10634,6 @@
     "value": 0.88
    },
    {
-    "name": "New Zealand",
-    "value": 0.52
-   },
-   {
     "name": "Nigeria",
     "value": 3.6
    },
@@ -11054,10 +10882,6 @@
    {
     "name": "Netherlands",
     "value": 0.83
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.59
    },
    {
     "name": "Nigeria",
@@ -11310,10 +11134,6 @@
     "value": 0.79
    },
    {
-    "name": "New Zealand",
-    "value": 0.51
-   },
-   {
     "name": "Nigeria",
     "value": 1.74
    },
@@ -11562,10 +11382,6 @@
    {
     "name": "Netherlands",
     "value": 0.77
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.57
    },
    {
     "name": "Nigeria",
@@ -11818,10 +11634,6 @@
     "value": 0.72
    },
    {
-    "name": "New Zealand",
-    "value": 0.52
-   },
-   {
     "name": "Nigeria",
     "value": 1.36
    },
@@ -12070,10 +11882,6 @@
    {
     "name": "Netherlands",
     "value": 0.71
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.7
    },
    {
     "name": "Nigeria",
@@ -12326,10 +12134,6 @@
     "value": 0.68
    },
    {
-    "name": "New Zealand",
-    "value": 0.83
-   },
-   {
     "name": "Nigeria",
     "value": 1.35
    },
@@ -12578,10 +12382,6 @@
    {
     "name": "Netherlands",
     "value": 0.67
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.85
    },
    {
     "name": "Nigeria",
@@ -12834,10 +12634,6 @@
     "value": 0.68
    },
    {
-    "name": "New Zealand",
-    "value": 0.79
-   },
-   {
     "name": "Nigeria",
     "value": 1.44
    },
@@ -13086,10 +12882,6 @@
    {
     "name": "Netherlands",
     "value": 0.66
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.84
    },
    {
     "name": "Nigeria",
@@ -13342,10 +13134,6 @@
     "value": 0.66
    },
    {
-    "name": "New Zealand",
-    "value": 0.77
-   },
-   {
     "name": "Nigeria",
     "value": 1.5
    },
@@ -13593,10 +13381,6 @@
    },
    {
     "name": "Netherlands",
-    "value": 0.76
-   },
-   {
-    "name": "New Zealand",
     "value": 0.76
    },
    {
@@ -13850,10 +13634,6 @@
     "value": 0.77
    },
    {
-    "name": "New Zealand",
-    "value": 0.69
-   },
-   {
     "name": "Nigeria",
     "value": 1.38
    },
@@ -14102,10 +13882,6 @@
    {
     "name": "Netherlands",
     "value": 0.8
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.68
    },
    {
     "name": "Nigeria",
@@ -14358,10 +14134,6 @@
     "value": 0.79
    },
    {
-    "name": "New Zealand",
-    "value": 0.67
-   },
-   {
     "name": "Nigeria",
     "value": 1.27
    },
@@ -14610,10 +14382,6 @@
    {
     "name": "Netherlands",
     "value": 0.78
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.73
    },
    {
     "name": "Nigeria",
@@ -14866,10 +14634,6 @@
     "value": 0.78
    },
    {
-    "name": "New Zealand",
-    "value": 0.99
-   },
-   {
     "name": "Nigeria",
     "value": 1.32
    },
@@ -15118,10 +14882,6 @@
    {
     "name": "Netherlands",
     "value": 0.81
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.05
    },
    {
     "name": "Nigeria",
@@ -15374,10 +15134,6 @@
     "value": 0.8
    },
    {
-    "name": "New Zealand",
-    "value": 0.97
-   },
-   {
     "name": "Nigeria",
     "value": 1.08
    },
@@ -15626,10 +15382,6 @@
    {
     "name": "Netherlands",
     "value": 0.84
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.89
    },
    {
     "name": "Nigeria",
@@ -15882,10 +15634,6 @@
     "value": 0.79
    },
    {
-    "name": "New Zealand",
-    "value": 0.81
-   },
-   {
     "name": "Nigeria",
     "value": 0.92
    },
@@ -16134,10 +15882,6 @@
    {
     "name": "Netherlands",
     "value": 0.77
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.75
    },
    {
     "name": "Nigeria",
@@ -16390,10 +16134,6 @@
     "value": 0.76
    },
    {
-    "name": "New Zealand",
-    "value": 0.69
-   },
-   {
     "name": "Nigeria",
     "value": 0.85
    },
@@ -16642,10 +16382,6 @@
    {
     "name": "Netherlands",
     "value": 0.74
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.38
    },
    {
     "name": "Nigeria",
@@ -16898,10 +16634,6 @@
     "value": 0.78
    },
    {
-    "name": "New Zealand",
-    "value": 1.01
-   },
-   {
     "name": "Nigeria",
     "value": 0.94
    },
@@ -17150,10 +16882,6 @@
    {
     "name": "Netherlands",
     "value": 0.77
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.14
    },
    {
     "name": "Nigeria",
@@ -17406,10 +17134,6 @@
     "value": 0.8
    },
    {
-    "name": "New Zealand",
-    "value": 1.16
-   },
-   {
     "name": "Nigeria",
     "value": 1.07
    },
@@ -17658,10 +17382,6 @@
    {
     "name": "Netherlands",
     "value": 0.83
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.16
    },
    {
     "name": "Nigeria",
@@ -17914,10 +17634,6 @@
     "value": 0.86
    },
    {
-    "name": "New Zealand",
-    "value": 1.16
-   },
-   {
     "name": "Nigeria",
     "value": 1.1
    },
@@ -18145,7 +17861,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 0.99
    },
    {
     "name": "Malaysia",
@@ -18166,10 +17882,6 @@
    {
     "name": "Netherlands",
     "value": 0.88
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.99
    },
    {
     "name": "Nigeria",
@@ -18399,7 +18111,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.02
    },
    {
     "name": "Malaysia",
@@ -18420,10 +18132,6 @@
    {
     "name": "Netherlands",
     "value": 0.95
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.0
    },
    {
     "name": "Nigeria",
@@ -18653,7 +18361,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.06
    },
    {
     "name": "Malaysia",
@@ -18674,10 +18382,6 @@
    {
     "name": "Netherlands",
     "value": 1.02
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.34
    },
    {
     "name": "Nigeria",
@@ -18907,7 +18611,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.12
    },
    {
     "name": "Malaysia",
@@ -18928,10 +18632,6 @@
    {
     "name": "Netherlands",
     "value": 1.04
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.38
    },
    {
     "name": "Nigeria",
@@ -19161,7 +18861,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.57
    },
    {
     "name": "Malaysia",
@@ -19182,10 +18882,6 @@
    {
     "name": "Netherlands",
     "value": 1.03
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.46
    },
    {
     "name": "Nigeria",
@@ -19415,7 +19111,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.72
    },
    {
     "name": "Malaysia",
@@ -19436,10 +19132,6 @@
    {
     "name": "Netherlands",
     "value": 0.97
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.29
    },
    {
     "name": "Nigeria",
@@ -19669,7 +19361,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.61
    },
    {
     "name": "Malaysia",
@@ -19690,10 +19382,6 @@
    {
     "name": "Netherlands",
     "value": 0.96
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.36
    },
    {
     "name": "Nigeria",
@@ -19923,7 +19611,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.43
    },
    {
     "name": "Malaysia",
@@ -19944,10 +19632,6 @@
    {
     "name": "Netherlands",
     "value": 0.93
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.48
    },
    {
     "name": "Nigeria",
@@ -20177,7 +19861,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.37
    },
    {
     "name": "Malaysia",
@@ -20198,10 +19882,6 @@
    {
     "name": "Netherlands",
     "value": 0.95
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.64
    },
    {
     "name": "Nigeria",
@@ -20431,7 +20111,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.34
    },
    {
     "name": "Malaysia",
@@ -20452,10 +20132,6 @@
    {
     "name": "Netherlands",
     "value": 0.88
-   },
-   {
-    "name": "New Zealand",
-    "value": 0.85
    },
    {
     "name": "Nigeria",
@@ -20685,7 +20361,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.28
    },
    {
     "name": "Malaysia",
@@ -20706,10 +20382,6 @@
    {
     "name": "Netherlands",
     "value": 0.87
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.12
    },
    {
     "name": "Nigeria",
@@ -20939,7 +20611,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.05
    },
    {
     "name": "Malaysia",
@@ -20960,10 +20632,6 @@
    {
     "name": "Netherlands",
     "value": 0.81
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.45
    },
    {
     "name": "Nigeria",
@@ -21193,7 +20861,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 0.95
    },
    {
     "name": "Malaysia",
@@ -21214,10 +20882,6 @@
    {
     "name": "Netherlands",
     "value": 0.86
-   },
-   {
-    "name": "New Zealand",
-    "value": 1.83
    },
    {
     "name": "Nigeria",
@@ -21447,7 +21111,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 0.99
    },
    {
     "name": "Malaysia",
@@ -21468,10 +21132,6 @@
    {
     "name": "Netherlands",
     "value": 0.93
-   },
-   {
-    "name": "New Zealand",
-    "value": 2.26
    },
    {
     "name": "Nigeria",
@@ -21701,7 +21361,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.1
    },
    {
     "name": "Malaysia",
@@ -21722,10 +21382,6 @@
    {
     "name": "Netherlands",
     "value": 1.0
-   },
-   {
-    "name": "New Zealand",
-    "value": 2.7
    },
    {
     "name": "Nigeria",
@@ -21955,7 +21611,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.1
    },
    {
     "name": "Malaysia",
@@ -21976,10 +21632,6 @@
    {
     "name": "Netherlands",
     "value": 1.06
-   },
-   {
-    "name": "New Zealand",
-    "value": 3.13
    },
    {
     "name": "Nigeria",
@@ -22209,7 +21861,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.1
    },
    {
     "name": "Malaysia",
@@ -22230,10 +21882,6 @@
    {
     "name": "Netherlands",
     "value": 1.06
-   },
-   {
-    "name": "New Zealand",
-    "value": 3.13
    },
    {
     "name": "Nigeria",
@@ -22463,7 +22111,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.1
    },
    {
     "name": "Malaysia",
@@ -22484,10 +22132,6 @@
    {
     "name": "Netherlands",
     "value": 1.06
-   },
-   {
-    "name": "New Zealand",
-    "value": 3.13
    },
    {
     "name": "Nigeria",
@@ -22717,7 +22361,7 @@
    },
    {
     "name": "South Korea",
-    "value": 0.87
+    "value": 1.1
    },
    {
     "name": "Malaysia",
@@ -22738,10 +22382,6 @@
    {
     "name": "Netherlands",
     "value": 1.06
-   },
-   {
-    "name": "New Zealand",
-    "value": 3.13
    },
    {
     "name": "Nigeria",
@@ -22840,5 +22480,153 @@
     "value": 1.42
    }
   ]
- ]
+ ],
+ "subtitle": {
+  "2020-01-18": "2020-01-18\n",
+  "2020-01-19": "2020-01-19\n",
+  "2020-01-20": "2020-01-20\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-21": "2020-01-21\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-22": "2020-01-22\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-23": "2020-01-23\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-24": "2020-01-24\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-25": "2020-01-25\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-26": "2020-01-26\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-27": "2020-01-27\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-28": "2020-01-28\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-29": "2020-01-29\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-30": "2020-01-30\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-01-31": "2020-01-31\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-01": "2020-02-01\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-02": "2020-02-02\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-03": "2020-02-03\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-04": "2020-02-04\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-05": "2020-02-05\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-06": "2020-02-06\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-07": "2020-02-07\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-08": "2020-02-08\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-09": "2020-02-09\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-10": "2020-02-10\nOur data shows that COVID19 cases are firstly reported in China, with initially \na quite high R",
+  "2020-02-11": "2020-02-11\n2-11: In less than a month, it quickly becomes less than 1, which is an indicator \nof successful interventions",
+  "2020-02-12": "2020-02-12\n2-11: In less than a month, it quickly becomes less than 1, which is an indicator \nof successful interventions",
+  "2020-02-13": "2020-02-13\n2-13: Japan starts to show cases",
+  "2020-02-14": "2020-02-14\n2-13: Japan starts to show cases",
+  "2020-02-15": "2020-02-15\n2-13: Japan starts to show cases",
+  "2020-02-16": "2020-02-16\n2-13: Japan starts to show cases",
+  "2020-02-17": "2020-02-17\n2-13: Japan starts to show cases",
+  "2020-02-18": "2020-02-18\n2-13: Japan starts to show cases",
+  "2020-02-19": "2020-02-19\n2-13: Japan starts to show cases",
+  "2020-02-20": "2020-02-20\n2-13: Japan starts to show cases",
+  "2020-02-21": "2020-02-21\n2-13: Japan starts to show cases",
+  "2020-02-22": "2020-02-22\n2-13: Japan starts to show cases",
+  "2020-02-23": "2020-02-23\n2-13: Japan starts to show cases",
+  "2020-02-24": "2020-02-24\n2-13: Japan starts to show cases",
+  "2020-02-25": "2020-02-25\n2-13: Japan starts to show cases",
+  "2020-02-26": "2020-02-26\n2-26: And then South Korea",
+  "2020-02-27": "2020-02-27\n2-26: And then South Korea",
+  "2020-02-28": "2020-02-28\n2-26: And then South Korea",
+  "2020-02-29": "2020-02-29\n2-26: And then South Korea",
+  "2020-03-01": "2020-03-01\n3-1: Then Iran, Italy, and the USA",
+  "2020-03-02": "2020-03-02\n3-1: Then Iran, Italy, and the USA",
+  "2020-03-03": "2020-03-03\n3-1: Then Iran, Italy, and the USA",
+  "2020-03-04": "2020-03-04\n3-1: Then Iran, Italy, and the USA",
+  "2020-03-05": "2020-03-05\n3-1: Then Iran, Italy, and the USA",
+  "2020-03-06": "2020-03-06\n3-6: German, France and Spain",
+  "2020-03-07": "2020-03-07\n3-6: German, France and Spain",
+  "2020-03-08": "2020-03-08\n3-6: German, France and Spain",
+  "2020-03-09": "2020-03-09\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-10": "2020-03-10\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-11": "2020-03-11\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-12": "2020-03-12\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-13": "2020-03-13\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-14": "2020-03-14\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-15": "2020-03-15\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-16": "2020-03-16\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-17": "2020-03-17\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-18": "2020-03-18\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-19": "2020-03-19\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-20": "2020-03-20\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-21": "2020-03-21\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-22": "2020-03-22\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-23": "2020-03-23\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-24": "2020-03-24\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-25": "2020-03-25\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-26": "2020-03-26\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-27": "2020-03-27\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-28": "2020-03-28\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-29": "2020-03-29\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-30": "2020-03-30\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-03-31": "2020-03-31\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-01": "2020-04-01\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-02": "2020-04-02\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-03": "2020-04-03\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-04": "2020-04-04\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-05": "2020-04-05\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-06": "2020-04-06\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-07": "2020-04-07\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-08": "2020-04-08\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-09": "2020-04-09\n2-11: In less than a month, it quickly be3-9: The UK, Canada, and many other \nplaces, but pay particular attention to the USA during the next two weeks",
+  "2020-04-10": "2020-04-10\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-11": "2020-04-11\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-12": "2020-04-12\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-13": "2020-04-13\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-14": "2020-04-14\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-15": "2020-04-15\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-16": "2020-04-16\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-17": "2020-04-17\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-18": "2020-04-18\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-19": "2020-04-19\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-20": "2020-04-20\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-21": "2020-04-21\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-22": "2020-04-22\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-23": "2020-04-23\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-24": "2020-04-24\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-25": "2020-04-25\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-26": "2020-04-26\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-27": "2020-04-27\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-28": "2020-04-28\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-29": "2020-04-29\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-04-30": "2020-04-30\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-01": "2020-05-01\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-02": "2020-05-02\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-03": "2020-05-03\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-04": "2020-05-04\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-05": "2020-05-05\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-06": "2020-05-06\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-07": "2020-05-07\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-08": "2020-05-08\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-09": "2020-05-09\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-10": "2020-05-10\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-11": "2020-05-11\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-12": "2020-05-12\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-13": "2020-05-13\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-14": "2020-05-14\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-15": "2020-05-15\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-16": "2020-05-16\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-17": "2020-05-17\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-18": "2020-05-18\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-19": "2020-05-19\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-20": "2020-05-20\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-21": "2020-05-21\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-22": "2020-05-22\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-23": "2020-05-23\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-24": "2020-05-24\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-25": "2020-05-25\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-26": "2020-05-26\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-27": "2020-05-27\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-28": "2020-05-28\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-29": "2020-05-29\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-30": "2020-05-30\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-05-31": "2020-05-31\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-01": "2020-06-01\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-02": "2020-06-02\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-03": "2020-06-03\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-04": "2020-06-04\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-05": "2020-06-05\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-06": "2020-06-06\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-07": "2020-06-07\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-08": "2020-06-08\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-09": "2020-06-09\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-10": "2020-06-10\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2",
+  "2020-06-11": "2020-06-11\n4-10: A lot of places start to show stable R<1, some with more or less stable \n1<R<2, and some with oscillating R between 1 and 2"
+ }
 }

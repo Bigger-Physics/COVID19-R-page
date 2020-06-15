@@ -1,0 +1,5 @@
+Now the USA and Brazil are the only two places with color code 'Red'. 
+
+This means that COVID19 in many other places has been under control or significant \nprogress has been made such that taking China-like interventions in each of those \nplaces now does not lead to a reduction of a large number of cases.
+
+However, it is not the case in the USA and Brazil.
