@@ -69,8 +69,16 @@
         </div>
 
         <h3 class='title' style='text-align: center;'>
-            COVID-19 Time-Varying Reproduction Numbers All Over the World</h3>
-        <!-- <p style='text-align: center;'>BNU Satety and Systems Science Team (last updated on 2020/4/29)</p> -->
+            COVID-19 Time-Varying Reproduction Numbers All Over the World
+        </h3>
+        
+        <div class="row">
+            <div class="col" style='text-align: center;'>
+                <video width="640" height="368" controls>
+                    <source src="./videos/R.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <div id="chart_container_R" style="height: 560px"></div>
@@ -79,7 +87,16 @@
         <br>
         <h3 class='title' style='text-align: center;'>
             How many COVID-19 cases could have been prevented if the 
-            interventions were as effective as those in China?</h3>
+            interventions were as effective as those in China?
+        </h3>
+        
+        <div class="row">
+            <div class="col" style='text-align: center;'>
+                <video width="640" height="368" controls>
+                    <source src="./videos/C1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <div id="chart_container_C1" style="height: 560px"></div>
@@ -111,7 +128,16 @@
         <br>
         <h3 class='title' style='text-align: center;'>
             How many COVID-19 cases could have been prevented if the 
-            interventions were as effective as those in South Korea?</h3>
+            interventions were as effective as those in South Korea?
+        </h3>
+
+        <div class="row">
+            <div class="col" style='text-align: center;'>
+                <video width="640" height="368" controls>
+                    <source src="./videos/C2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <div id="chart_container_C2" style="height: 560px"></div>
@@ -460,7 +486,8 @@
                     optionR.options.push(
                         {
                             title: {
-                                text: worldJson.subtitle[worldJson.dates[i]]
+                                // text: worldJson.subtitle[worldJson.dates[i]]
+                                text:worldJson.dates[i]
                             },
                             series: [{
                                 name: 'Reproduction Number',
@@ -492,7 +519,8 @@
                     optionC1.options.push(
                         {
                             title: {
-                                text: worldJson.subtitle[worldJson.dates[i]]
+                                // text: worldJson.subtitle[worldJson.dates[i]]
+                                text:worldJson.dates[i]
                             },
                             series: [{
                                 name: 'Reduced infections',
@@ -524,7 +552,8 @@
                     optionC2.options.push(
                         {
                             title: {
-                                text: worldJson.subtitle[worldJson.dates[i]]
+                                // text: worldJson.subtitle[worldJson.dates[i]]
+                                text:worldJson.dates[i]
                             },
                             series: [{
                                 name: 'Reduced infections',
